@@ -1,0 +1,69 @@
+Statistics is collection of procedures and principles for gaining information in order to make decisions when faced with uncertainty.
+Concepts to Learn in statistics:
+	1. Statistical Features
+	2. Probability Distributions
+	3. Bayesian Statistics
+
+Data scientist is better at programming than any statistician and better at stats than any programmer.
+Examples :
+	-Identify risk factors for a disease
+	-Customize Spam detection
+	-Establish the relationship between variables.
+
+Exercise : Lending Club Loan History to check if Credit Scores are correct and predict more optimized Credit Scores using ML
+	 Goal is to analyze the structure of the data using DS techniques and then further apply techniques to optimize
+
+1. Statistical Features
+	Bias,Variance, Mean, Median, weighted Avg, Std Deviation, Quartiles, 5-Number Summary,Percentiles, Z-score Solver, Central Limit Theorem : 
+	Box-Plot
+
+2. Probability Distributions: 
+	Probability : Percent chance of an event happening
+
+3. Bayesian Statistics
+	Frequency statistics
+
+4,5,6.. Up Sampling, Down Sampling, Dimensionality Reduction and more..
+
+SUMMARY
+Statistical Features like Bias, Variance and many others help us Explore A Dataset to Gain valuable insights.
+Probability Distributions define the percent chance that some event will occur and we can use them to understand the spread of Data.
+Bayesian Statistics expresses probability as a degree of belief in an event which can change as new information is gathered rather than a fixed value based frequency.
+
+Coding : Loan Default Prediction
+-------------
+DATA CLEANING
+-------------
+MERGING DATA
+	dataset = pd.concat([df2012_13, df2014])
+
+REMOVING COLUMNS
+	empty_cols = [i for i in range(45,72)]
+	dataset = dataset.drop(dataset.columns[empty_cols],axis=1)
+
+	dataset=Dataset_withBoolTarget.dropna(thresh = 340000,axis=1) #340000 is minimum number of non-NA values
+
+	del_col_names = ["delinq_2yrs",  "last_pymnt_d", "chargeoff_within_12_mths","delinq_amnt","emp_title", "term", "emp_title",	"pymnt_plan","purpose","title", "zip_code", "verification_status", "dti","earliest_cr_line", "initial_list_status", "out_prncp", "pymnt_plan", "num_tl_90g_dpd_24m", "num_tl_30dpd", "num_tl_120dpd_2m", "num_accts_ever_120_pd", "delinq_amnt",  "chargeoff_within_12_mths", "total_rec_late_fee", "out_prncp_inv", "issue_d"] #deleting some more columns
+	dataset = dataset.drop(labels = del_col_names, axis = 1) 
+
+CONVERTING TARGET VARIABLE TO BOOLEAN
+	di = {"Fully Paid":0, "Charged Off":1}   
+	Dataset_withBoolTarget= data_with_loanstatus_sliced.replace({"loan_status": di})
+
+-------------------
+DATA TRANSFORMATION
+-------------------
+#grade - Borrowers grade given basing on his/her past history - encoded to numerical values.
+Final_data['grade'] = Final_data['grade'].map({'A':7,'B':6,'C':5,'D':4,'E':3,'F':2,'G':1})
+
+#home_ownership - this is feature in the dataset which had to be encoded to numerical values. 
+Final_data["home_ownership"] = Final_data["home_ownership"].map({"MORTGAGE":6,"RENT":5,"OWN":4,"OTHER":3,"NONE":2,"ANY":1})
+
+#Emp_Length - this feature was not formatted properly. It has some values which was in the format like
+#"10+years","5years"...etc. we changed them to numerical values in the below cell.
+Final_data["emp_length"] = Final_data["emp_length"].replace({'years':'','year':'',' ':'','<':'','\+':'','n/a':'0'}, regex = True)
+Final_data["emp_length"] = Final_data["emp_length"].apply(lambda x:int(x))
+
+------------------------------------------
+FILLING MISSING VALUES AND FEATURE SCALING
+------------------------------------------
