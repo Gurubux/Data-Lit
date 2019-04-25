@@ -22,3 +22,5 @@
   Facebook: https://www.facebook.com/sirajology/<br>
   Youtube: https://www.youtube.com/channel/UCWN3xxRkmTPmbKwht9FuE5A<br>
   
+<br><br>
+<strong>PS : <strong><br> <i>To Open .ipynb files (If unable to view on github) copy link of file.ipynb and paste it on the web site https://nbviewer.jupyter.org/</i>
