@@ -54,16 +54,176 @@ CONVERTING TARGET VARIABLE TO BOOLEAN
 DATA TRANSFORMATION
 -------------------
 #grade - Borrowers grade given basing on his/her past history - encoded to numerical values.
-Final_data['grade'] = Final_data['grade'].map({'A':7,'B':6,'C':5,'D':4,'E':3,'F':2,'G':1})
+Final_data[`grade`] = Final_data[`grade`].map({`A`:7,`B`:6,`C`:5,`D`:4,`E`:3,`F`:2,`G`:1})
 
 #home_ownership - this is feature in the dataset which had to be encoded to numerical values. 
 Final_data["home_ownership"] = Final_data["home_ownership"].map({"MORTGAGE":6,"RENT":5,"OWN":4,"OTHER":3,"NONE":2,"ANY":1})
 
 #Emp_Length - this feature was not formatted properly. It has some values which was in the format like
 #"10+years","5years"...etc. we changed them to numerical values in the below cell.
-Final_data["emp_length"] = Final_data["emp_length"].replace({'years':'','year':'',' ':'','<':'','\+':'','n/a':'0'}, regex = True)
+Final_data["emp_length"] = Final_data["emp_length"].replace({`years`:``,`year`:``,` `:``,`<`:``,`\+`:``,`n/a`:`0`}, regex = True)
 Final_data["emp_length"] = Final_data["emp_length"].apply(lambda x:int(x))
 
 ------------------------------------------
 FILLING MISSING VALUES AND FEATURE SCALING
 ------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------------------
+MEAN, MEDIAN, MODE, GEOMETRIC MEAN, HARMONIC MEAN, VARIANCE, STANDARD DEVIATION, COVARIANCE, CORELATION ¹²³⁴⁵⁶⁷⁸⁹⁰ *******
+------------------------------------------
+MEAN   	μ	: ( Σ xi ) / n
+MEDIAN 		: Middle of a data set.
+MODE   		: Value that occurs the most often.
+GEAOMETRIC 	: n√(a1 × a2 × ... × an)
+	MEAN 		
+HARMONIC	: n / Σ (1/xi)
+	MEAN
+VARIANCE σ²	: 1/n Σ (xi - μ)²
+
+STANDARD σ	: √σ²
+   DEVIATION
+
+NORMAL DISTRIBUTION - https://www.mathsisfun.com/data/standard-normal-distribution.html
+Data can be "distributed" (spread out) in different ways. But there are many cases where the data tends to be around a central value with no bias left or right, and it gets close to a "Normal Distribution"
+	      _
+	     /|\ 
+	    /|||\ 
+	   /|||||\ 
+	  /|||||||\ 
+	_/|||||||||\_
+The Normal Distribution has:
+	- mean = median = mode
+	- symmetry about the center
+	- 50% of values less than the mean and 50% greater than the mean
+	- likely to be within 1 standard deviation (68 out of 100 should be)
+	- very likely to be within 2 standard deviations (95 out of 100 should be)
+	- almost certainly within 3 standard deviations (997 out of 1000 should be)
+
+Z- SCORE : The number of standard deviations from the mean is also called the "Standard Score", "sigma" or "z-score". 
+    ______________  
+   /    x - μ	 /
+  / z = ______  / 
+ /	      σ	   / 
+/_____________/
+
+STANDARD NORMAL DISTRIBUTION Table - https://www.mathsisfun.com/data/standard-normal-distribution-table.html
+
+
+z is the "z-score" (Standard Score)
+x is the value to be standardized
+μ is the mean
+σ is the standard deviation
+
+# A Practical Example: Your company packages sugar in 1 kg bags.
+	When you weigh a sample of bags you get these results:
+		1007g, 1032g, 1002g, 983g, 1004g, ... (a hundred measurements)
+		Mean = 1010g
+		Standard Deviation = 20g
+==> 31% of the bags are less than 1000g,  which is cheating the customer!
+It is a random thing, so we can`t stop bags having less than 1000g, but we can try to reduce it a lot.
+
+Let`s adjust the machine so that 1000g is:
+	at −3 standard deviations:
+		From the big bell curve above we see that 0.1% are less. But maybe that is too small.
+	at −2.5 standard deviations:
+		Below 3 is 0.1% and between 3 and 2.5 standard deviations is 0.5%, together that is 0.1% + 0.5% = 0.6% (a good choice I think)
+
+So let us adjust the machine to have 1000g at −2.5 standard deviations from the mean.
+Now, we can adjust it to:
+	increase the amount of sugar in each bag (which changes the mean), or
+	make it more accurate (which reduces the standard deviation)
+
+Let us try both.
+
+ADJUST THE MEAN AMOUNT IN EACH BAG
+The standard deviation is 20g, and we need 2.5 of them:
+    ______________  				
+   /     x - μ	 /
+  / z = ______  /  = -0.5
+ /	      σ	   / 		
+/_____________/
+    __________________  
+   /       1000 - μ	 /
+  / -2.5 = ______   / 
+ /	         20	   / 
+/_________________/
+
+(2.5 × 20g = 50g)
+μ = 1000 + 50 = 1050
+
+So the machine should average 1050g, like this: https://www.mathsisfun.com/data/images/normal-distribution-ex2.gif
+
+
+Or
+ADJUST THE ACCURACY OF THE MACHINE
+We can keep the same mean (of 1010g), but then we need 2.5 standard deviations to be equal to 10g:
+    __________________  
+   /      1000 - 1010/
+  / -2.5 = ______   / 
+ /	         σ     / 
+/_________________/
+
+σ = 1000 - 1010 / -2.5
+  = 10g / 2.5 = 4g
+
+So the standard deviation should be 4g, like this: <img src=`https://www.mathsisfun.com/data/images/normal-distribution-ex3.gif`/>
+
+Or perhaps we could have some combination of better accuracy and slightly larger average size, I will leave that up to you!
+
+
+CORELATION
+A correlation is a statistical measure of the relationship between two variables. The measure is best used in variables that demonstrate a linear relationship between each other. The fit of the data can be visually represented in a scatterplot.
+
+The correlation COEFFICIENT is a value that indicates the strength of the relationship. The coefficient can take any values from -1 to 1. The interpretations of the values are:
+	-1: Perfect negative correlation. The variables tend to move in opposite directions (i.e., when one variable increases, the other variable decreases).
+	0 : No correlation. The variables do not have a relationship with each other.
+	1 : Perfect positive correlation. The variables tend to move in the same direction (i.e., when one variable increases, the other variable also increases).
+
+If two variables are correlated, it does not imply that one variable causes the changes in another variable. Correlation only assesses relationships between variables, and there may be different factors that lead to the relationships. CAUSATION may be a reason for the correlation, but it is not the only possible explanation.
+CORELATION FORMULAE
+ 	__________________________________________  
+   /         	Σ (xi - x̅) (yi - ȳ)			 /
+  / r(xy) = ______________________________  / 
+ /	         √(Σ (xi - x̅)² Σ(yi - ȳ)²)     / 
+/_________________________________________/
+	rxy – the correlation coefficient of the linear relationship between the variables x and y
+	xi – the values of the x-variable in a sample
+	x̅ – the mean of the values of the x-variable
+	yi – the values of the y-variable in a sample
+	ȳ – the mean of the values of the y-variable
+
+
+
+COVARIANCE
+Covariance is a measure of the relationship between two random variables. The metric evaluates how much – to what extent – the variables change together. In other words, it is essentially a measure of the variance between two variables (note that the variance of one variable equals the variance of the other variable). However, the metric does not assess the dependency between variables.
+Unlike the correlation coefficient, covariance is measured in units. The units are computed by multiplying the units of the two variables. The variance can take any positive or negative values. The values are interpreted as follows:
+	Positive covariance: Indicates that two variables tend to move in the same direction.
+	Negative covariance: Reveals that two variables tend to move in inverse directions.
+
+ 	__________________________________________    __________________________________________
+   /         		Σ (xi - x̅) (yi - ȳ)		 /   /         		Σ (xi - x̅) (yi - ȳ)		   /
+  / Cov(x,y) = ___________________________  /   / Cov(x,y) = ___________________________  /   
+ /	        			n 				   /   /	        			n-1			     / 
+/_________________________________________/   /_________________________________________/
+		Population COVARIANCE 								Sample COVARIANCE
+
+
+COVARIANCE VS. CORRELATION
+Covariance and correlation both primarily assess the relationship between variables. The closest analogy to the relationship between them is the relationship between the variance and standard deviation.
+
+Covariance measures the total variation of two random variables from their expected values. Using covariance, we can only gauge the direction of the relationship (whether the variables tend to move in tandem or show an inverse relationship). However, it does not indicate the strength of the relationship, nor the dependency between the variables.
+
+On the other hand, correlation measures the strength of the relationship between variables. Correlation is the scaled measure of covariance. It is dimensionless. In other words, the correlation coefficient is always a pure value and not measured in any units.
+
+The relationship between the two concepts can be expressed using the formula below:
+		_____________________________
+	   /	  		Cov(x,y)		/
+	  /	p(X,Y) = __________        / 
+	 /				σx σy         /
+	/____________________________/
+****************MEAN, MEDIAN, MODE, GEOMETRIC MEAN, HARMONIC MEAN, VARIANCE, COVARIANCE, CORELATION ¹²³⁴⁵⁶⁷⁸⁹⁰****************
+
+
+####################FOOTER################################
+https://github.com/llSourcell/LoanDefault-Prediction
+####################FOOTER################################
