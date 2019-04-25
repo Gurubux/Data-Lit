@@ -64,9 +64,55 @@ Final_data["home_ownership"] = Final_data["home_ownership"].map({"MORTGAGE":6,"R
 Final_data["emp_length"] = Final_data["emp_length"].replace({`years`:``,`year`:``,` `:``,`<`:``,`\+`:``,`n/a`:`0`}, regex = True)
 Final_data["emp_length"] = Final_data["emp_length"].apply(lambda x:int(x))
 
+In Code error Fix:
+https://github.com/llSourcell/LoanDefault-Prediction/blob/master/Loan_Default_Prediction_Final.ipynb
+–> Final_data[“emp_length”] = Final_data[“emp_length”].apply(lambda x:int(x))
+Error : ValueError: cannot convert float NaN to integer
+–> Final_data[“emp_length”] = Final_data[“emp_length”].apply(lambda x:pd.to_numeric(x, downcast=’integer’))
+
+
 ------------------------------------------
 FILLING MISSING VALUES AND FEATURE SCALING
 ------------------------------------------
+> We have some important features which have some missing values. We filled those missing those values with the mean of the column. 
+Final_data.fillna(Final_data.mean(),inplace = True)
+
+> We scaled the features all the features here using standard scaler. 
+scl = preprocessing.StandardScaler() #instance of preprocessing
+fields = Final_data.columns.values[:-1]
+data_clean = pd.DataFrame(scl.fit_transform(Final_data[fields]), columns = fields)
+data_clean['loan_status'] = Final_data['loan_status']
+data_clean['loan_status'].value_counts()
+
+> We sampled our dataset here after infering from the learning curve plotted.
+loanstatus_0 = data_clean[data_clean["loan_status"]==0]
+loanstatus_1 = data_clean[data_clean["loan_status"]==1]
+subset_of_loanstatus_0 = loanstatus_0.sample(n=5500)
+subset_of_loanstatus_1 = loanstatus_1.sample(n=5500)
+data_clean = pd.concat([subset_of_loanstatus_1, subset_of_loanstatus_0])
+data_clean = data_clean.sample(frac=1).reset_index(drop=True)
+print("Current shape of dataset :",data_clean.shape)
+data_clean.head()
+
+> Below are correlation values between the features finally selected.
+data_clean.corr()
+------------------------------------------
+LEARNING CURVE
+------------------------------------------
+------------------------------------------
+ROC CURVE PLOT FUNCTION
+------------------------------------------
+------------------------------------------
+CONFUSION MATRIX VIZ FUNCTION
+------------------------------------------
+------------------------------------------
+FEATURE SELECTION USING RFE (RECURSIVE FEATURE ELIMINATION)
+
+------------------------------------------
+------------------------------------------
+PCA (PRINCIPAL COMPONENT ANALYSIS)
+------------------------------------------
+https://github.com/llSourcell/LoanDefault-Prediction/blob/master/Loan_Default_Prediction_Final.ipynb
 
 ------------------------------------------------------------------------------------------------------------------------------
 MEAN, MEDIAN, MODE, GEOMETRIC MEAN, HARMONIC MEAN, VARIANCE, STANDARD DEVIATION, COVARIANCE, CORELATION ¹²³⁴⁵⁶⁷⁸⁹⁰ *******
@@ -226,4 +272,5 @@ The relationship between the two concepts can be expressed using the formula bel
 
 ####################FOOTER################################
 https://github.com/llSourcell/LoanDefault-Prediction
+https://www.lendingclub.com/info/download-data.action
 ####################FOOTER################################
