@@ -1,0 +1,18 @@
+Expected Value - Mean(μ)
+	Σ(x) = ∑ pᵢ xᵢ 
+	Var(x)=∑ pᵢ xᵢ² − [E(x)]²
+	σ=√Var(x)
+
+Bernoulli Distribution
+	Var=P(1–P)
+
+Poisson Distribution
+	λᵏ e^−λ
+	________
+		k!
+where:
+k= 0,1,2,3…(number of successes for the event)
+e= 2.71828 (Euler’s constant)
+λ= mean number of successes in the given time interval or region of space
+
+	E(x)=Var(x)=λ
