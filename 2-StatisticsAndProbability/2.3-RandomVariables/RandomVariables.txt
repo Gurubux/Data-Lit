@@ -136,3 +136,14 @@ PRACTICE 2 - https://www.khanacademy.org/math/statistics-probability/random-vari
 -------------------------------------------------------------
 VARIANCE AND STANDARD DEVIATION OF A DISCRETE RANDOM VARIABLE
 -------------------------------------------------------------
+https://www.khanacademy.org/math/statistics-probability/random-variables-stats-library/random-variables-discrete/v/variance-and-standard-deviation-of-a-discrete-random-variable
+Σ(X) 	= ∑ pᵢ xᵢ 
+Var(x)	= ∑ pᵢ xᵢ² − [E(x)]²
+σ 		= √Var(x)
+
+
+-------------------------------------------------------------
+AREA UNDER THE CURVE
+-------------------------------------------------------------
+Definite Integrals and Area Under a Curve
+https://revisionmaths.com/advanced-level-maths-revision/pure-maths/calculus/area-under-curve
