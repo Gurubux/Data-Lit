@@ -1,0 +1,138 @@
+https://www.khanacademy.org/math/statistics-probability
+--------------------------
+PERMUTATION 
+--------------------------
+	  	__________
+	   /   n!	 /
+ₙPₖ =  /	 _____  /
+	 /  (n-k)! /
+	/_________/
+
+--------------------------
+COMBINATION
+--------------------------
+	  	__________
+	   /   ₙPₖ	 /
+ₙCₖ =  /	 _____  /
+	 /     k!  /
+	/_________/
+
+
+
+--------------------------
+PROBABILITY
+--------------------------
+P(x) = #Of possibilities that match our constraint
+	   ______________________________________________
+	   			# of total possibilities
+
+	   			0.00000095367431640625
+	   			3.94368648529052734375
+	   			0.05631351470947265625
+
+
+--------------------------
+RANDOM VARIABLES
+--------------------------
+Ways/Function to map outcomes of random processes to  numbers
+	where,
+		random processes = Flipping a coind, Rolling a dice, measuring rain tomorrow etc.
+				 ______________________|\
+Random Process  |Quantifying outcomes to >  Number  
+				|______________________|/ 
+
+Ex 1: X { 1 if heads
+	   	  2 if tails }
+Ex 2: Y { Sum of Rolling
+	 	  7 dice  }
+
+Advantages : 
+	Quantifying,
+	Notations
+	Probabilty P(Y < 30), P(Y is even)
+
+
+Types :
+					DISCRETE 							| 				CONTINOUS
+________________________________________________________|_____________________________________________________
+	1.	Finite 											|1. Infinite
+	2.	Can list all possible values					|2. Cannot list all possible values
+	3.	Ex. -Flipping a coin 							|3. Ex. -Mass of random person in the GYM
+			-Year of Birth of students in class			|		-EXACT Winning time of Olymic runner in 2017 
+			-# of ants born tomorrow in a Year 			|
+			-Winning time of Olymic runner in 2017 		|
+
+---------------------------------------
+CONSTRUCTING A PROBABILITY DISTRIBUTION
+---------------------------------------
+X = Number of "Head" after 3 flips of a fair coin
+HHH,HHT,HTH,HTT,THH,THT,TTH,TTT = 8 total posibilities
+P(H=0) = 1/8
+P(H=1) = 3/8
+P(H=2) = 3/8
+P(H=3) = 1/8
+NOTE:
+Probability of having exactly 'k' number of heads out of 'n' total possible outcome in one flip = ₙCₖ / # of total possibilities = ₃Cₖ / 8 
+So, for k=0 head - ₃C₀ / 8 = 1/8
+So, for k=1 head - ₃C₁ / 8 = 3/8
+So, for k=2 head - ₃C₂ / 8 = 3/8
+So, for k=3 head - ₃C₃ / 8 = 1/8
+
+So X = k = 0,1,2,3 i.e discrete
+
+1. Probability Distribution Discrete - https://raw.githubusercontent.com/Gurubux/Data-Lit/master/2-StatisticsAndProbability/2.3-RandomVariables/Probability_distribution_discrete.PNG
+
+2. Probability Distribution Discrete 2 - https://raw.githubusercontent.com/Gurubux/Data-Lit/master/2-StatisticsAndProbability/2.3-RandomVariables/Probability_distribution_discrete_2.PNG
+
+3. Probability Distribution Discrete 3 - 
+In case of 2 fair coin flip, the sample space is HH,HT,TH,TT and the probabilities are 0.50*0.50,0.50*0.50,0.50*0.50,0.50*0.50 since its a fair coin, Heads and Tail have equal probabilities in each flip for each of the two coins.
+If coin isn't fair, and the probabilities are given then the sample space for two un fair coins with say "50% probilities for heads for coin 1 and 70% probailities for coin 2 coming heads", will be
+
+HH		0.50*0.70 = 0.35
+HT		0.50*0.30 = 0.15
+TH		0.50*0.70 = 0.35
+TT 		0.50*0.30 = 0.15
+TOTAL 				1.00
+
+# of heads	Outcomes	Probability
+0			{HH}		0.35
+1			{HT, TH}	0.15 + 0.35 = 0.50
+2			{TT}		0.15
+Total		4			1.00
+https://raw.githubusercontent.com/Gurubux/Data-Lit/master/2-StatisticsAndProbability/2.3-RandomVariables/Probability_distribution_discrete_3.PNG
+
+A Valid Probability model are the ones,
+	- With Sum of probabilities if all scenarios needs to be equal to 1 / 100%
+	- No negative probilities(0 is fine)
+
+Equally Likely means - 
+	P(x) = #Of possibilities that match our constraint
+		   ______________________________________________
+		   			# of total possibilities
+
+Not Equally Likely means - 
+	P(x) =  "50% probilities for heads for coin 1 and 70% probailities for coin 2 coming heads"
+
+
+-----------------------------------------------------
+MEAN (EXPECTED VALUE) OF A DISCRETE RANDOM VARIABLE
+-----------------------------------------------------
+Expected value uses probability to tell us what outcomes to expect in the long run.
+
+E(x) = μₓ =  ∑ pᵢ xᵢ 
+Even for a random variable that can only take on integer values, you can still have a non-integer expected value.
+https://raw.githubusercontent.com/Gurubux/Data-Lit/master/2-StatisticsAndProbability/2.3-RandomVariables/E_of_X_DiscreteRandomVariable.PNG
+
+
+- Of course a bettor could place two of these bets and win both of them. There is a 0.3 * 0.3 = 0.09 probability of this happening.
+
+- If this did happen, the average return per bet would be 15 dollars, not -2.50 dollars.
+
+- Expected return is the average outcome if a procedure could be repeated a large number of times, meaning that if a bettor places a large number of these bets, they should expect an average return of about -2.50 dollars per bet. 
+PRACTICE 1 - https://www.khanacademy.org/math/statistics-probability/random-variables-stats-library/random-variables-discrete/e/expected_value
+PRACTICE 2 - https://www.khanacademy.org/math/statistics-probability/random-variables-stats-library/random-variables-discrete/e/mean-expected-value-discrete-random-variable
+
+
+-------------------------------------------------------------
+VARIANCE AND STANDARD DEVIATION OF A DISCRETE RANDOM VARIABLE
+-------------------------------------------------------------
