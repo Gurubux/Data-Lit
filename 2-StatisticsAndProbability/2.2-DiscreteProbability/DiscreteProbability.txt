@@ -1,13 +1,27 @@
-Expected Value - Mean(μ)
+------------------------------------
+EXPECTED VALUE - MEAN(Μ)
+------------------------------------
 	Σ(x) = ∑ pᵢ xᵢ 
 	Var(x)=∑ pᵢ xᵢ² − [E(x)]²
 	σ=√Var(x)
 
-Bernoulli Distribution
+------------------------------------
+BERNOULLI DISTRIBUTION
+------------------------------------
+The probability of success for a Bernoulli trial is defined as P, The probability of failure is 1 − P
+The variance of a series of Bernoulli trials is the measure of how spread out the values in the data set are. It is given by P(1 – P).
+
 	Var=P(1–P)
 
-Poisson Distribution
-	λᵏ e^−λ
+For the coin flip example,
+Var = (0.5)(1 – 0.5) = 0.25
+This means that for the coin flip experiment the variance would be 0.25.
+
+
+------------------------------------
+POISSON DISTRIBUTION
+------------------------------------
+	λᵏ e^⁻λ
 	________
 		k!
 where:
@@ -16,3 +30,24 @@ e= 2.71828 (Euler’s constant)
 λ= mean number of successes in the given time interval or region of space
 
 	E(x)=Var(x)=λ
+
+
+Example
+A social media website gains an average of 12 new followers each day. Find the probability of gaining 75 followers in a week.
+
+1. Condition check
+	followers are independent each other
+	the probability is same
+
+2. Define variables
+k=75 (We are looking for 75 followers, so 75 is our number of successes.)
+λ=12*7=84 (84 new followers in a week)
+
+3. Poisson formula
+
+	84⁷⁵ e⁻⁸⁴
+	_________
+		75!
+	= 0.028
+	
+The likelihood of getting 75 new followers in a week is 2.8%.

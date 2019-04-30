@@ -117,14 +117,14 @@ https://github.com/llSourcell/LoanDefault-Prediction/blob/master/Loan_Default_Pr
 ------------------------------------------------------------------------------------------------------------------------------
 MEAN, MEDIAN, MODE, GEOMETRIC MEAN, HARMONIC MEAN, VARIANCE, STANDARD DEVIATION, COVARIANCE, CORELATION ¹²³⁴⁵⁶⁷⁸⁹⁰ *******
 ------------------------------------------
-MEAN   	μ	: ( Σ xi ) / n
+MEAN   	μ	: ( Σ xᵢ ) / n
 MEDIAN 		: Middle of a data set.
 MODE   		: Value that occurs the most often.
 GEAOMETRIC 	: n√(a1 × a2 × ... × an)
 	MEAN 		
-HARMONIC	: n / Σ (1/xi)
+HARMONIC	: n / Σ (1/xᵢ)
 	MEAN
-VARIANCE σ²	: 1/n Σ (xi - μ)²
+VARIANCE σ²	: 1/n Σ (xᵢ - μ)²
 
 STANDARD σ	: √σ²
    DEVIATION
@@ -228,26 +228,26 @@ The correlation COEFFICIENT is a value that indicates the strength of the relati
 If two variables are correlated, it does not imply that one variable causes the changes in another variable. Correlation only assesses relationships between variables, and there may be different factors that lead to the relationships. CAUSATION may be a reason for the correlation, but it is not the only possible explanation.
 CORELATION FORMULAE
  	__________________________________________  
-   /         	Σ (xi - x̅) (yi - ȳ)			 /
+   /         	Σ (xᵢ - x̅) (yᵢ - ȳ)			 /
   / r(xy) = ______________________________  / 
- /	         √(Σ (xi - x̅)² Σ(yi - ȳ)²)     / 
+ /	         √(Σ (xᵢ - x̅)² Σ(yᵢ - ȳ)²)     / 
 /_________________________________________/
 	rxy – the correlation coefficient of the linear relationship between the variables x and y
-	xi – the values of the x-variable in a sample
+	xᵢ – the values of the x-variable in a sample
 	x̅ – the mean of the values of the x-variable
-	yi – the values of the y-variable in a sample
+	yᵢ – the values of the y-variable in a sample
 	ȳ – the mean of the values of the y-variable
 
 
 
 COVARIANCE
 Covariance is a measure of the relationship between two random variables. The metric evaluates how much – to what extent – the variables change together. In other words, it is essentially a measure of the variance between two variables (note that the variance of one variable equals the variance of the other variable). However, the metric does not assess the dependency between variables.
-Unlike the correlation coefficient, covariance is measured in units. The units are computed by multiplying the units of the two variables. The variance can take any positive or negative values. The values are interpreted as follows:
+Unlike the correlation coefficient, covariance is measured in units. The units are computed by multiplyᵢng the units of the two variables. The variance can take any positive or negative values. The values are interpreted as follows:
 	Positive covariance: Indicates that two variables tend to move in the same direction.
 	Negative covariance: Reveals that two variables tend to move in inverse directions.
 
  	__________________________________________    __________________________________________
-   /         		Σ (xi - x̅) (yi - ȳ)		 /   /         		Σ (xi - x̅) (yi - ȳ)		   /
+   /         		Σ (xᵢ - x̅) (yᵢ - ȳ)		 /   /         		Σ (xᵢ - x̅) (yᵢ - ȳ)		   /
   / Cov(x,y) = ___________________________  /   / Cov(x,y) = ___________________________  /   
  /	        			n 				   /   /	        			n-1			     / 
 /_________________________________________/   /_________________________________________/
