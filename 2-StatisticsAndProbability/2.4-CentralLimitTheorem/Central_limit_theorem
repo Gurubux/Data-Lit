@@ -1,1 +1,59 @@
-Central limit theorem
+---------------------
+CENTRAL LIMIT THEOREM
+---------------------
+CLT says,
+	If we plot the frequency of the means of many sample with n =X, we do get a normal distribution.
+	It a very good approximation for the sum or the means of a lot of processes.
+
+
+As you increase your sample size, as you increase your n, and as you take a lot of sample means(or sum), you're going to have a frequency plot(Of the mean/sum) that looks very, very close to a normal distribution.
+Example:
+	For n=10
+	Take a sample say 
+		x₁ = [1,2,4,6,8,9,7,8,9,1,1] μₓ = 56/10 = 5.6
+		x₂ = [1,3,5,5,9,9,7,8,8,1,1] μₓ = 61/10 = 6.1
+		x₃ = [1,1,3,6,8,9,8,8,9,1,2] μₓ = 55/10 = 5.5 
+		.
+		.
+		.
+		x₁₀₀₀₀
+
+		Plot the frquenncy of the mean(number of times each mean occured)
+		It will get close to a normal distribution.
+
+		As Sample counts approach to infinity we approach to closer normal deviation
+
+Because in life, there's all sorts of processes out there, proteins bump crazy things, humans interacting in weird ways. And you don't know the probability distribution functions for any of those things. But what the central limit theorem tells us is if we add a bunch of those actions together, assuming that they all have the same distribution, or if we were to take the mean of all of those actions together, and if we were to plot the frequency of those means, we do get a normal distribution.
+
+If you decide to take high sample size (s) per observation, your normal distribution narrows.
+//////////////////////////////////
+sample size (n) is the number of data points we get from the distribution.
+observations (k) is the number of observations we made. Each observation would take n data points and calculate a value out of it (such as the mean).
+
+The Central Limit Theorem states that with a sufficiently high number of observations (k), we get a normal distribution.
+
+The Law of Large Numbers states that with sufficiently high sample size (n), our sample value (such as sample mean) is pretty close to the actual population value (such as population mean). Thus, the Law of Large Numbers is about one observation.
+
+They are different, but are definitely related.
+
+For example, I only talked about number of observations (k) above. No matter what your sample size (s) is you will get a normal distribution. However, did you know that the width of the normal distribution changes based on your sample size (s)? If you decide to take high sample size (s) per observation, your normal distribution narrows.
+
+Since the normal distribution is more narrow, what is the chance that 1 observation made would give sample value close to population value? It would be more than when the normal distribution is wide. In conclusion, the Central Limit Theorem describes the distribution of sample values, while the Law of Large Numbers describes how likely one observation is close to the population value.
+//////////////////////////////
+
+The process of plotting is called 'SAMPLING DISTRIBUTION OF THE SAMPLE MEAN'
+Reps,
+Mean,
+Median,
+SD,
+Skew,
+Kurtosis
+
+Skew 	 --> 0 Skew = Nice and symmetric Normal distribution(Perfect ND)
+		 	 + Skew = Long tail to the right
+		  	 - Skew = Long tail to the left
+https://raw.githubusercontent.com/Gurubux/Data-Lit/master/2-StatisticsAndProbability/2.4-CentralLimitTheorem/SamplingDistribution_Skew.PNG
+
+Kurtosis --> 0 Kurtosis = Nice and symmetric Normal distribution(Perfect ND)
+		 	 + Kurtosis = Fatter tails, pointy peak
+		  	 - Kurtosis = Smaller tails, smoother peak
