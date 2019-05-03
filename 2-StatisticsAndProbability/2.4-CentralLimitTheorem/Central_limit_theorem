@@ -26,6 +26,7 @@ Example:
 Because in life, there's all sorts of processes out there, proteins bump crazy things, humans interacting in weird ways. And you don't know the probability distribution functions for any of those things. But what the central limit theorem tells us is if we add a bunch of those actions together, assuming that they all have the same distribution, or if we were to take the mean of all of those actions together, and if we were to plot the frequency of those means, we do get a normal distribution.
 
 If you decide to take high sample size (s) per observation, your normal distribution narrows.
+
 //////////////////////////////////
 sample size (n) is the number of data points we get from the distribution.
 observations (k) is the number of observations we made. Each observation would take n data points and calculate a value out of it (such as the mean).

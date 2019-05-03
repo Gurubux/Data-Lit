@@ -33,7 +33,7 @@ Cluster Size|	Row Count|	Values in Cluster			  |	Merge?|	New Cell Value
 2			|	151		 |	Chemical Samples(145 rows)	  |		  |	Chemical Samples
 			|			 |	Chemical samples(6 rows)	  |	      |
 
-Merge-Selected and reculster
+Merge-Selected and recluster
 
 5. Custom text transform
 value.split('|').uniques().join('|')

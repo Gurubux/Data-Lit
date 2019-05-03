@@ -1,0 +1,149 @@
+---------------------------------------
+MERGE COLUMNS OF DIFFERENT FILES
+---------------------------------------
+flights = flights.merge(airlines, how = 'left', on = 'carrier')
+
+
+-------------------------------------------------------
+FILTER FLIGHT DELAYS BETWEEN -60 AND 120 MINUTES
+-------------------------------------------------------
+flights = flights[flights['arr_delay'].between(-60, 120)]
+
+
+---------------------------------------------
+###### Histogram of All Arrival Delays ######
+---------------------------------------------
+---------
+MATPLOTLIB
+---------
+figsize(9, 7)
+# Make the histogram using matplotlib, bins must be integet
+plt.hist(flights['arr_delay'], color = 'blue', edgecolor = 'black',
+         bins = int(180/5))
+# Add labels
+plt.title('Histogram of Arrival Delays')
+plt.xlabel('Delay (min)'); plt.ylabel('Flights');
+
+---------
+SEABORN
+---------
+figsize(9, 7)
+
+sns.distplot(flights['arr_delay'], hist=True, kde=False, 
+             bins=int(180/5), color = 'blue',
+             hist_kws={'edgecolor':'black'})
+plt.title('Histogram of Arrival Delays')
+plt.xlabel('Delay (min)'); plt.ylabel('Flights');
+
+--------
+PLOTLY
+--------
+data = [go.Histogram(x=flights['arr_delay'],
+                     xbins=dict(
+                            start=min(flights['arr_delay']),
+                            end=max(flights['arr_delay']),
+                            size=5
+                        ),#or nbinsx=36
+                     marker = dict(
+                         line = dict(
+                             color = "black",
+                                width = 1
+                         )
+                     ))]
+py.iplot(data, filename='basic histogram')
+
+
+---------------------------------------------
+HISTOGRAM WITH VARYING BINWIDTHS
+---------------------------------------------
+figsize(18, 16)
+
+# Show 4 different binwidths
+for i, binwidth in enumerate([1, 5, 10, 15]):
+    
+    # Set up the plot
+    ax = plt.subplot(2, 2, i + 1)
+    
+    # Draw the plot
+    ax.hist(flights['arr_delay'], bins = int(180/binwidth),
+             color = 'blue', edgecolor = 'black')
+    
+    # Title and labels
+    ax.set_title('Histogram with Binwidth = %d' % binwidth, size = 30)
+    ax.set_xlabel('Delay (min)', size = 22)
+    ax.set_ylabel('Flights', size= 22)
+
+plt.tight_layout()
+plt.show()
+
+---------------------------------------------
+Where Histograms Fail: Multiple Categories
+GROUPING WITH COUNT
+TOP FIVE
+INLINE IF CONDITION
+SUBSET HISTOGRAM
+---------------------------------------------
+# Extract top five airlines with most flights
+carrier_flights = pd.Series(flights.groupby('name')['name'].count())
+print(carrier_flights)
+carrier_flights = carrier_flights.sort_values(ascending=False)
+#print(carrier_flights)
+top_five = carrier_flights.index[:5]
+#print(top_five)
+
+# Subset to the top 5 airlines
+top_five_flights = flights[flights['name'].isin(top_five)]
+#top_five_flights
+
+
+figsize(10, 8)
+
+# Iterate through each of the five airlines
+for airline in top_five:
+    # Subset to the airline
+    subset = top_five_flights[top_five_flights['name'] == airline]
+    # Make a histogram with the airline
+    sns.distplot(subset['arr_delay'], bins = int(180/5), 
+                 label = airline, hist = True, kde = False, 
+                 norm_hist=True, 
+                 hist_kws = {'edgecolor': 'black'})
+    
+plt.legend(prop={'size': 16}, title = 'Airline')
+plt.title('Histogram of Delays by Airline'); plt.xlabel('Delay (min)'); plt.ylabel('Normalized Counts');
+
+---------------------------------------------
+SOLUTIONS
+---------------------------------------------# Make a separate list for each airline
+x1 = list(flights[flights['name'] == 'United Air Lines Inc.']['arr_delay'])
+x2 = list(flights[flights['name'] == 'JetBlue Airways']['arr_delay'])
+x3 = list(flights[flights['name'] == 'ExpressJet Airlines Inc.']['arr_delay'])
+x4 = list(flights[flights['name'] == 'Delta Air Lines Inc.']['arr_delay'])
+x5 = list(flights[flights['name'] == 'American Airlines Inc.']['arr_delay'])
+
+# Assign colors for each airline and the names
+colors = ['#E69F00', '#56B4E9', '#F0E442', '#009E73', '#D55E00']
+names = ['United Air Lines Inc.', 'JetBlue Airways', 'ExpressJet Airlines Inc.',
+         'Delta Air Lines Inc.', 'American Airlines Inc.']
+
+#Solution 1: Side-by-Side Histograms
+figsize(10, 8)
+
+# Make the histogram using a list of lists
+# Normalize the flights and assign colors and names
+plt.hist([x1, x2, x3, x4, x5], bins = int(180/15), normed=True,
+         color = colors, label=names)
+
+# Plot formatting
+plt.legend()
+plt.xlabel('Delay (min)')
+plt.ylabel('Normalized Flights')
+plt.title('Side-by-Side Histogram with Multiple Airlines');         
+
+#
+figsize(10, 8)
+plt.hist([x1, x2, x3, x4, x5], bins = int(180/15), normed=True,
+         stacked=True,
+         color = colors, label=names)
+
+plt.legend(); plt.xlabel('Delay (min)'); plt.ylabel('Normed Flights');
+plt.title('Stacked Histogram with Multiple Airlines');
