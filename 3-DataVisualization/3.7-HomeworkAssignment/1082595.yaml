@@ -1,0 +1,2105 @@
+---
+meta:
+  data_version: 0.9
+  created: 2017-04-08
+  revision: 1
+info:
+  city: Bangalore
+  competition: IPL
+  dates:
+    - 2017-04-08
+  gender: male
+  match_type: T20
+  outcome:
+    by:
+      runs: 15
+    winner: Royal Challengers Bangalore
+  overs: 20
+  player_of_match:
+    - KM Jadhav
+  teams:
+    - Royal Challengers Bangalore
+    - Delhi Daredevils
+  toss:
+    decision: bat
+    winner: Royal Challengers Bangalore
+  venue: M Chinnaswamy Stadium
+innings:
+  - 1st innings:
+      team: Royal Challengers Bangalore
+      deliveries:
+        - 0.1:
+            batsman: CH Gayle
+            bowler: Z Khan
+            non_striker: SR Watson
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 0.2:
+            batsman: SR Watson
+            bowler: Z Khan
+            non_striker: CH Gayle
+            runs:
+              batsman: 4
+              extras: 0
+              total: 4
+        - 0.3:
+            batsman: SR Watson
+            bowler: Z Khan
+            non_striker: CH Gayle
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 0.4:
+            batsman: SR Watson
+            bowler: Z Khan
+            non_striker: CH Gayle
+            runs:
+              batsman: 4
+              extras: 0
+              total: 4
+        - 0.5:
+            batsman: SR Watson
+            bowler: Z Khan
+            non_striker: CH Gayle
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 0.6:
+            batsman: SR Watson
+            bowler: Z Khan
+            non_striker: CH Gayle
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 1.1:
+            batsman: SR Watson
+            bowler: CH Morris
+            non_striker: CH Gayle
+            runs:
+              batsman: 4
+              extras: 0
+              total: 4
+        - 1.2:
+            batsman: SR Watson
+            bowler: CH Morris
+            non_striker: CH Gayle
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 1.3:
+            batsman: SR Watson
+            bowler: CH Morris
+            extras:
+              legbyes: 1
+            non_striker: CH Gayle
+            runs:
+              batsman: 0
+              extras: 1
+              total: 1
+        - 1.4:
+            batsman: CH Gayle
+            bowler: CH Morris
+            non_striker: SR Watson
+            runs:
+              batsman: 4
+              extras: 0
+              total: 4
+        - 1.5:
+            batsman: CH Gayle
+            bowler: CH Morris
+            non_striker: SR Watson
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 1.6:
+            batsman: CH Gayle
+            bowler: CH Morris
+            non_striker: SR Watson
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 2.1:
+            batsman: SR Watson
+            bowler: PJ Cummins
+            non_striker: CH Gayle
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 2.2:
+            batsman: SR Watson
+            bowler: PJ Cummins
+            non_striker: CH Gayle
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 2.3:
+            batsman: CH Gayle
+            bowler: PJ Cummins
+            non_striker: SR Watson
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 2.4:
+            batsman: CH Gayle
+            bowler: PJ Cummins
+            extras:
+              wides: 1
+            non_striker: SR Watson
+            runs:
+              batsman: 0
+              extras: 1
+              total: 1
+        - 2.5:
+            batsman: CH Gayle
+            bowler: PJ Cummins
+            non_striker: SR Watson
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 2.6:
+            batsman: SR Watson
+            bowler: PJ Cummins
+            non_striker: CH Gayle
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 2.7:
+            batsman: SR Watson
+            bowler: PJ Cummins
+            non_striker: CH Gayle
+            runs:
+              batsman: 4
+              extras: 0
+              total: 4
+        - 3.1:
+            batsman: CH Gayle
+            bowler: CH Morris
+            non_striker: SR Watson
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 3.2:
+            batsman: CH Gayle
+            bowler: CH Morris
+            non_striker: SR Watson
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+            wicket:
+              fielders:
+                - SV Samson
+              kind: caught
+              player_out: CH Gayle
+        - 3.3:
+            batsman: Mandeep Singh
+            bowler: CH Morris
+            non_striker: SR Watson
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 3.4:
+            batsman: Mandeep Singh
+            bowler: CH Morris
+            non_striker: SR Watson
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 3.5:
+            batsman: Mandeep Singh
+            bowler: CH Morris
+            non_striker: SR Watson
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 3.6:
+            batsman: Mandeep Singh
+            bowler: CH Morris
+            non_striker: SR Watson
+            runs:
+              batsman: 4
+              extras: 0
+              total: 4
+        - 4.1:
+            batsman: SR Watson
+            bowler: S Nadeem
+            non_striker: Mandeep Singh
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 4.2:
+            batsman: SR Watson
+            bowler: S Nadeem
+            non_striker: Mandeep Singh
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 4.3:
+            batsman: SR Watson
+            bowler: S Nadeem
+            extras:
+              wides: 1
+            non_striker: Mandeep Singh
+            runs:
+              batsman: 0
+              extras: 1
+              total: 1
+        - 4.4:
+            batsman: SR Watson
+            bowler: S Nadeem
+            non_striker: Mandeep Singh
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 4.5:
+            batsman: SR Watson
+            bowler: S Nadeem
+            non_striker: Mandeep Singh
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 4.6:
+            batsman: Mandeep Singh
+            bowler: S Nadeem
+            non_striker: SR Watson
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 4.7:
+            batsman: Mandeep Singh
+            bowler: S Nadeem
+            non_striker: SR Watson
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 5.1:
+            batsman: SR Watson
+            bowler: PJ Cummins
+            non_striker: Mandeep Singh
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 5.2:
+            batsman: Mandeep Singh
+            bowler: PJ Cummins
+            non_striker: SR Watson
+            runs:
+              batsman: 4
+              extras: 0
+              total: 4
+        - 5.3:
+            batsman: Mandeep Singh
+            bowler: PJ Cummins
+            non_striker: SR Watson
+            runs:
+              batsman: 4
+              extras: 0
+              total: 4
+        - 5.4:
+            batsman: Mandeep Singh
+            bowler: PJ Cummins
+            non_striker: SR Watson
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 5.5:
+            batsman: Mandeep Singh
+            bowler: PJ Cummins
+            non_striker: SR Watson
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+            wicket:
+              kind: bowled
+              player_out: Mandeep Singh
+        - 5.6:
+            batsman: KM Jadhav
+            bowler: PJ Cummins
+            non_striker: SR Watson
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 6.1:
+            batsman: SR Watson
+            bowler: S Nadeem
+            non_striker: KM Jadhav
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 6.2:
+            batsman: KM Jadhav
+            bowler: S Nadeem
+            non_striker: SR Watson
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 6.3:
+            batsman: SR Watson
+            bowler: S Nadeem
+            non_striker: KM Jadhav
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 6.4:
+            batsman: SR Watson
+            bowler: S Nadeem
+            non_striker: KM Jadhav
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 6.5:
+            batsman: SR Watson
+            bowler: S Nadeem
+            non_striker: KM Jadhav
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 6.6:
+            batsman: KM Jadhav
+            bowler: S Nadeem
+            non_striker: SR Watson
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 7.1:
+            batsman: KM Jadhav
+            bowler: A Mishra
+            non_striker: SR Watson
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 7.2:
+            batsman: KM Jadhav
+            bowler: A Mishra
+            non_striker: SR Watson
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 7.3:
+            batsman: SR Watson
+            bowler: A Mishra
+            non_striker: KM Jadhav
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 7.4:
+            batsman: KM Jadhav
+            bowler: A Mishra
+            non_striker: SR Watson
+            runs:
+              batsman: 6
+              extras: 0
+              total: 6
+        - 7.5:
+            batsman: KM Jadhav
+            bowler: A Mishra
+            non_striker: SR Watson
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 7.6:
+            batsman: KM Jadhav
+            bowler: A Mishra
+            non_striker: SR Watson
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 8.1:
+            batsman: SR Watson
+            bowler: S Nadeem
+            non_striker: KM Jadhav
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 8.2:
+            batsman: KM Jadhav
+            bowler: S Nadeem
+            non_striker: SR Watson
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 8.3:
+            batsman: KM Jadhav
+            bowler: S Nadeem
+            non_striker: SR Watson
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 8.4:
+            batsman: SR Watson
+            bowler: S Nadeem
+            non_striker: KM Jadhav
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+            wicket:
+              fielders:
+                - RR Pant
+              kind: stumped
+              player_out: SR Watson
+        - 8.5:
+            batsman: STR Binny
+            bowler: S Nadeem
+            non_striker: KM Jadhav
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 8.6:
+            batsman: STR Binny
+            bowler: S Nadeem
+            non_striker: KM Jadhav
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 9.1:
+            batsman: KM Jadhav
+            bowler: Z Khan
+            non_striker: STR Binny
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 9.2:
+            batsman: STR Binny
+            bowler: Z Khan
+            non_striker: KM Jadhav
+            runs:
+              batsman: 2
+              extras: 0
+              total: 2
+        - 9.3:
+            batsman: STR Binny
+            bowler: Z Khan
+            non_striker: KM Jadhav
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 9.4:
+            batsman: KM Jadhav
+            bowler: Z Khan
+            non_striker: STR Binny
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 9.5:
+            batsman: STR Binny
+            bowler: Z Khan
+            non_striker: KM Jadhav
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 9.6:
+            batsman: STR Binny
+            bowler: Z Khan
+            non_striker: KM Jadhav
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 10.1:
+            batsman: STR Binny
+            bowler: S Nadeem
+            non_striker: KM Jadhav
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 10.2:
+            batsman: KM Jadhav
+            bowler: S Nadeem
+            non_striker: STR Binny
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 10.3:
+            batsman: STR Binny
+            bowler: S Nadeem
+            non_striker: KM Jadhav
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 10.4:
+            batsman: KM Jadhav
+            bowler: S Nadeem
+            non_striker: STR Binny
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 10.5:
+            batsman: KM Jadhav
+            bowler: S Nadeem
+            non_striker: STR Binny
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 10.6:
+            batsman: STR Binny
+            bowler: S Nadeem
+            non_striker: KM Jadhav
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 11.1:
+            batsman: STR Binny
+            bowler: PJ Cummins
+            non_striker: KM Jadhav
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 11.2:
+            batsman: STR Binny
+            bowler: PJ Cummins
+            non_striker: KM Jadhav
+            runs:
+              batsman: 4
+              extras: 0
+              total: 4
+        - 11.3:
+            batsman: STR Binny
+            bowler: PJ Cummins
+            non_striker: KM Jadhav
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 11.4:
+            batsman: KM Jadhav
+            bowler: PJ Cummins
+            non_striker: STR Binny
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 11.5:
+            batsman: STR Binny
+            bowler: PJ Cummins
+            non_striker: KM Jadhav
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 11.6:
+            batsman: KM Jadhav
+            bowler: PJ Cummins
+            extras:
+              legbyes: 1
+            non_striker: STR Binny
+            runs:
+              batsman: 0
+              extras: 1
+              total: 1
+        - 12.1:
+            batsman: KM Jadhav
+            bowler: A Mishra
+            non_striker: STR Binny
+            runs:
+              batsman: 2
+              extras: 0
+              total: 2
+        - 12.2:
+            batsman: KM Jadhav
+            bowler: A Mishra
+            non_striker: STR Binny
+            runs:
+              batsman: 6
+              extras: 0
+              total: 6
+        - 12.3:
+            batsman: KM Jadhav
+            bowler: A Mishra
+            non_striker: STR Binny
+            runs:
+              batsman: 4
+              extras: 0
+              total: 4
+        - 12.4:
+            batsman: KM Jadhav
+            bowler: A Mishra
+            non_striker: STR Binny
+            runs:
+              batsman: 4
+              extras: 0
+              total: 4
+        - 12.5:
+            batsman: KM Jadhav
+            bowler: A Mishra
+            non_striker: STR Binny
+            runs:
+              batsman: 2
+              extras: 0
+              total: 2
+        - 12.6:
+            batsman: KM Jadhav
+            bowler: A Mishra
+            non_striker: STR Binny
+            runs:
+              batsman: 6
+              extras: 0
+              total: 6
+        - 13.1:
+            batsman: STR Binny
+            bowler: CR Brathwaite
+            extras:
+              wides: 1
+            non_striker: KM Jadhav
+            runs:
+              batsman: 0
+              extras: 1
+              total: 1
+        - 13.2:
+            batsman: STR Binny
+            bowler: CR Brathwaite
+            non_striker: KM Jadhav
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 13.3:
+            batsman: KM Jadhav
+            bowler: CR Brathwaite
+            non_striker: STR Binny
+            runs:
+              batsman: 4
+              extras: 0
+              total: 4
+        - 13.4:
+            batsman: KM Jadhav
+            bowler: CR Brathwaite
+            non_striker: STR Binny
+            runs:
+              batsman: 6
+              extras: 0
+              total: 6
+        - 13.5:
+            batsman: KM Jadhav
+            bowler: CR Brathwaite
+            non_striker: STR Binny
+            runs:
+              batsman: 2
+              extras: 0
+              total: 2
+        - 13.6:
+            batsman: KM Jadhav
+            bowler: CR Brathwaite
+            non_striker: STR Binny
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 13.7:
+            batsman: STR Binny
+            bowler: CR Brathwaite
+            non_striker: KM Jadhav
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 14.1:
+            batsman: STR Binny
+            bowler: Z Khan
+            non_striker: KM Jadhav
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 14.2:
+            batsman: STR Binny
+            bowler: Z Khan
+            non_striker: KM Jadhav
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 14.3:
+            batsman: KM Jadhav
+            bowler: Z Khan
+            extras:
+              wides: 1
+            non_striker: STR Binny
+            runs:
+              batsman: 0
+              extras: 1
+              total: 1
+        - 14.4:
+            batsman: KM Jadhav
+            bowler: Z Khan
+            non_striker: STR Binny
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 14.5:
+            batsman: KM Jadhav
+            bowler: Z Khan
+            non_striker: STR Binny
+            runs:
+              batsman: 4
+              extras: 0
+              total: 4
+        - 14.6:
+            batsman: KM Jadhav
+            bowler: Z Khan
+            non_striker: STR Binny
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 14.7:
+            batsman: STR Binny
+            bowler: Z Khan
+            non_striker: KM Jadhav
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+            wicket:
+              fielders:
+                - SW Billings
+              kind: caught
+              player_out: STR Binny
+        - 15.1:
+            batsman: Vishnu Vinod
+            bowler: CR Brathwaite
+            non_striker: KM Jadhav
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 15.2:
+            batsman: KM Jadhav
+            bowler: CR Brathwaite
+            non_striker: Vishnu Vinod
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 15.3:
+            batsman: Vishnu Vinod
+            bowler: CR Brathwaite
+            non_striker: KM Jadhav
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 15.4:
+            batsman: KM Jadhav
+            bowler: CR Brathwaite
+            non_striker: Vishnu Vinod
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 15.5:
+            batsman: KM Jadhav
+            bowler: CR Brathwaite
+            non_striker: Vishnu Vinod
+            runs:
+              batsman: 4
+              extras: 0
+              total: 4
+        - 15.6:
+            batsman: KM Jadhav
+            bowler: CR Brathwaite
+            non_striker: Vishnu Vinod
+            runs:
+              batsman: 6
+              extras: 0
+              total: 6
+        - 16.1:
+            batsman: Vishnu Vinod
+            bowler: Z Khan
+            non_striker: KM Jadhav
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 16.2:
+            batsman: KM Jadhav
+            bowler: Z Khan
+            non_striker: Vishnu Vinod
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 16.3:
+            batsman: Vishnu Vinod
+            bowler: Z Khan
+            non_striker: KM Jadhav
+            runs:
+              batsman: 6
+              extras: 0
+              total: 6
+        - 16.4:
+            batsman: Vishnu Vinod
+            bowler: Z Khan
+            non_striker: KM Jadhav
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+            wicket:
+              fielders:
+                - S Nadeem
+                - Z Khan
+              kind: run out
+              player_out: Vishnu Vinod
+        - 16.5:
+            batsman: KM Jadhav
+            bowler: Z Khan
+            non_striker: P Negi
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 16.6:
+            batsman: KM Jadhav
+            bowler: Z Khan
+            non_striker: P Negi
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+            wicket:
+              fielders:
+                - CH Morris
+              kind: caught
+              player_out: KM Jadhav
+        - 17.1:
+            batsman: Iqbal Abdulla
+            bowler: CH Morris
+            non_striker: P Negi
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 17.2:
+            batsman: Iqbal Abdulla
+            bowler: CH Morris
+            non_striker: P Negi
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 17.3:
+            batsman: P Negi
+            bowler: CH Morris
+            non_striker: Iqbal Abdulla
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 17.4:
+            batsman: P Negi
+            bowler: CH Morris
+            non_striker: Iqbal Abdulla
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 17.5:
+            batsman: P Negi
+            bowler: CH Morris
+            non_striker: Iqbal Abdulla
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 17.6:
+            batsman: Iqbal Abdulla
+            bowler: CH Morris
+            non_striker: P Negi
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 18.1:
+            batsman: P Negi
+            bowler: PJ Cummins
+            non_striker: Iqbal Abdulla
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 18.2:
+            batsman: Iqbal Abdulla
+            bowler: PJ Cummins
+            non_striker: P Negi
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 18.3:
+            batsman: Iqbal Abdulla
+            bowler: PJ Cummins
+            non_striker: P Negi
+            runs:
+              batsman: 2
+              extras: 0
+              total: 2
+        - 18.4:
+            batsman: Iqbal Abdulla
+            bowler: PJ Cummins
+            non_striker: P Negi
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 18.5:
+            batsman: P Negi
+            bowler: PJ Cummins
+            non_striker: Iqbal Abdulla
+            runs:
+              batsman: 2
+              extras: 0
+              total: 2
+        - 18.6:
+            batsman: P Negi
+            bowler: PJ Cummins
+            non_striker: Iqbal Abdulla
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 19.1:
+            batsman: Iqbal Abdulla
+            bowler: CH Morris
+            non_striker: P Negi
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 19.2:
+            batsman: P Negi
+            bowler: CH Morris
+            non_striker: Iqbal Abdulla
+            runs:
+              batsman: 6
+              extras: 0
+              total: 6
+        - 19.3:
+            batsman: P Negi
+            bowler: CH Morris
+            non_striker: Iqbal Abdulla
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+            wicket:
+              kind: bowled
+              player_out: P Negi
+        - 19.4:
+            batsman: TS Mills
+            bowler: CH Morris
+            non_striker: Iqbal Abdulla
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 19.5:
+            batsman: TS Mills
+            bowler: CH Morris
+            non_striker: Iqbal Abdulla
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 19.6:
+            batsman: TS Mills
+            bowler: CH Morris
+            non_striker: Iqbal Abdulla
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+            wicket:
+              kind: bowled
+              player_out: TS Mills
+  - 2nd innings:
+      team: Delhi Daredevils
+      deliveries:
+        - 0.1:
+            batsman: AP Tare
+            bowler: B Stanlake
+            non_striker: SW Billings
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 0.2:
+            batsman: AP Tare
+            bowler: B Stanlake
+            extras:
+              wides: 1
+            non_striker: SW Billings
+            runs:
+              batsman: 0
+              extras: 1
+              total: 1
+        - 0.3:
+            batsman: AP Tare
+            bowler: B Stanlake
+            non_striker: SW Billings
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 0.4:
+            batsman: AP Tare
+            bowler: B Stanlake
+            non_striker: SW Billings
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 0.5:
+            batsman: SW Billings
+            bowler: B Stanlake
+            non_striker: AP Tare
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 0.6:
+            batsman: SW Billings
+            bowler: B Stanlake
+            non_striker: AP Tare
+            runs:
+              batsman: 4
+              extras: 0
+              total: 4
+        - 0.7:
+            batsman: SW Billings
+            bowler: B Stanlake
+            non_striker: AP Tare
+            runs:
+              batsman: 3
+              extras: 0
+              total: 3
+        - 1.1:
+            batsman: SW Billings
+            bowler: YS Chahal
+            non_striker: AP Tare
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 1.2:
+            batsman: SW Billings
+            bowler: YS Chahal
+            non_striker: AP Tare
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 1.3:
+            batsman: SW Billings
+            bowler: YS Chahal
+            non_striker: AP Tare
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 1.4:
+            batsman: AP Tare
+            bowler: YS Chahal
+            non_striker: SW Billings
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 1.5:
+            batsman: SW Billings
+            bowler: YS Chahal
+            non_striker: AP Tare
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 1.6:
+            batsman: AP Tare
+            bowler: YS Chahal
+            non_striker: SW Billings
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 2.1:
+            batsman: AP Tare
+            bowler: B Stanlake
+            non_striker: SW Billings
+            runs:
+              batsman: 4
+              extras: 0
+              total: 4
+        - 2.2:
+            batsman: AP Tare
+            bowler: B Stanlake
+            non_striker: SW Billings
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 2.3:
+            batsman: AP Tare
+            bowler: B Stanlake
+            non_striker: SW Billings
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 2.4:
+            batsman: AP Tare
+            bowler: B Stanlake
+            non_striker: SW Billings
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 2.5:
+            batsman: AP Tare
+            bowler: B Stanlake
+            non_striker: SW Billings
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 2.6:
+            batsman: AP Tare
+            bowler: B Stanlake
+            non_striker: SW Billings
+            runs:
+              batsman: 4
+              extras: 0
+              total: 4
+        - 3.1:
+            batsman: SW Billings
+            bowler: Iqbal Abdulla
+            non_striker: AP Tare
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 3.2:
+            batsman: AP Tare
+            bowler: Iqbal Abdulla
+            non_striker: SW Billings
+            runs:
+              batsman: 4
+              extras: 0
+              total: 4
+        - 3.3:
+            batsman: AP Tare
+            bowler: Iqbal Abdulla
+            non_striker: SW Billings
+            runs:
+              batsman: 2
+              extras: 0
+              total: 2
+        - 3.4:
+            batsman: AP Tare
+            bowler: Iqbal Abdulla
+            non_striker: SW Billings
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 3.5:
+            batsman: SW Billings
+            bowler: Iqbal Abdulla
+            non_striker: AP Tare
+            runs:
+              batsman: 2
+              extras: 0
+              total: 2
+        - 3.6:
+            batsman: SW Billings
+            bowler: Iqbal Abdulla
+            non_striker: AP Tare
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 4.1:
+            batsman: SW Billings
+            bowler: TS Mills
+            non_striker: AP Tare
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 4.2:
+            batsman: AP Tare
+            bowler: TS Mills
+            non_striker: SW Billings
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 4.3:
+            batsman: AP Tare
+            bowler: TS Mills
+            non_striker: SW Billings
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 4.4:
+            batsman: AP Tare
+            bowler: TS Mills
+            non_striker: SW Billings
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+            wicket:
+              kind: bowled
+              player_out: AP Tare
+        - 4.5:
+            batsman: KK Nair
+            bowler: TS Mills
+            non_striker: SW Billings
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 4.6:
+            batsman: KK Nair
+            bowler: TS Mills
+            non_striker: SW Billings
+            runs:
+              batsman: 4
+              extras: 0
+              total: 4
+        - 5.1:
+            batsman: SW Billings
+            bowler: B Stanlake
+            non_striker: KK Nair
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 5.2:
+            batsman: SW Billings
+            bowler: B Stanlake
+            non_striker: KK Nair
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 5.3:
+            batsman: KK Nair
+            bowler: B Stanlake
+            non_striker: SW Billings
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+            wicket:
+              kind: bowled
+              player_out: KK Nair
+        - 5.4:
+            batsman: SV Samson
+            bowler: B Stanlake
+            non_striker: SW Billings
+            runs:
+              batsman: 3
+              extras: 0
+              total: 3
+        - 5.5:
+            batsman: SW Billings
+            bowler: B Stanlake
+            non_striker: SV Samson
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 5.6:
+            batsman: SV Samson
+            bowler: B Stanlake
+            non_striker: SW Billings
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 6.1:
+            batsman: SV Samson
+            bowler: YS Chahal
+            non_striker: SW Billings
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 6.2:
+            batsman: SW Billings
+            bowler: YS Chahal
+            non_striker: SV Samson
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 6.3:
+            batsman: SV Samson
+            bowler: YS Chahal
+            non_striker: SW Billings
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 6.4:
+            batsman: SV Samson
+            bowler: YS Chahal
+            non_striker: SW Billings
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 6.5:
+            batsman: SW Billings
+            bowler: YS Chahal
+            non_striker: SV Samson
+            runs:
+              batsman: 6
+              extras: 0
+              total: 6
+        - 6.6:
+            batsman: SW Billings
+            bowler: YS Chahal
+            non_striker: SV Samson
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 7.1:
+            batsman: SW Billings
+            bowler: Iqbal Abdulla
+            non_striker: SV Samson
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 7.2:
+            batsman: SV Samson
+            bowler: Iqbal Abdulla
+            non_striker: SW Billings
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 7.3:
+            batsman: SW Billings
+            bowler: Iqbal Abdulla
+            non_striker: SV Samson
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+            wicket:
+              fielders:
+                - B Stanlake
+              kind: caught
+              player_out: SW Billings
+        - 7.4:
+            batsman: SV Samson
+            bowler: Iqbal Abdulla
+            non_striker: RR Pant
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 7.5:
+            batsman: RR Pant
+            bowler: Iqbal Abdulla
+            non_striker: SV Samson
+            runs:
+              batsman: 6
+              extras: 0
+              total: 6
+        - 7.6:
+            batsman: RR Pant
+            bowler: Iqbal Abdulla
+            extras:
+              wides: 1
+            non_striker: SV Samson
+            runs:
+              batsman: 0
+              extras: 1
+              total: 1
+        - 7.7:
+            batsman: RR Pant
+            bowler: Iqbal Abdulla
+            extras:
+              wides: 1
+            non_striker: SV Samson
+            runs:
+              batsman: 0
+              extras: 1
+              total: 1
+        - 7.8:
+            batsman: RR Pant
+            bowler: Iqbal Abdulla
+            non_striker: SV Samson
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 8.1:
+            batsman: RR Pant
+            bowler: YS Chahal
+            non_striker: SV Samson
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 8.2:
+            batsman: RR Pant
+            bowler: YS Chahal
+            non_striker: SV Samson
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 8.3:
+            batsman: SV Samson
+            bowler: YS Chahal
+            extras:
+              legbyes: 1
+            non_striker: RR Pant
+            runs:
+              batsman: 0
+              extras: 1
+              total: 1
+        - 8.4:
+            batsman: RR Pant
+            bowler: YS Chahal
+            non_striker: SV Samson
+            runs:
+              batsman: 2
+              extras: 0
+              total: 2
+        - 8.5:
+            batsman: RR Pant
+            bowler: YS Chahal
+            non_striker: SV Samson
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 8.6:
+            batsman: RR Pant
+            bowler: YS Chahal
+            non_striker: SV Samson
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 9.1:
+            batsman: RR Pant
+            bowler: TS Mills
+            non_striker: SV Samson
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 9.2:
+            batsman: SV Samson
+            bowler: TS Mills
+            non_striker: RR Pant
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 9.3:
+            batsman: RR Pant
+            bowler: TS Mills
+            non_striker: SV Samson
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 9.4:
+            batsman: RR Pant
+            bowler: TS Mills
+            non_striker: SV Samson
+            runs:
+              batsman: 4
+              extras: 0
+              total: 4
+        - 9.5:
+            batsman: RR Pant
+            bowler: TS Mills
+            non_striker: SV Samson
+            runs:
+              batsman: 2
+              extras: 0
+              total: 2
+        - 9.6:
+            batsman: RR Pant
+            bowler: TS Mills
+            non_striker: SV Samson
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 10.1:
+            batsman: RR Pant
+            bowler: B Stanlake
+            non_striker: SV Samson
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 10.2:
+            batsman: RR Pant
+            bowler: B Stanlake
+            non_striker: SV Samson
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 10.3:
+            batsman: SV Samson
+            bowler: B Stanlake
+            non_striker: RR Pant
+            runs:
+              batsman: 4
+              extras: 0
+              total: 4
+        - 10.4:
+            batsman: SV Samson
+            bowler: B Stanlake
+            non_striker: RR Pant
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 10.5:
+            batsman: SV Samson
+            bowler: B Stanlake
+            non_striker: RR Pant
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+            wicket:
+              fielders:
+                - STR Binny
+              kind: caught
+              player_out: SV Samson
+        - 10.6:
+            batsman: CH Morris
+            bowler: B Stanlake
+            non_striker: RR Pant
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 11.1:
+            batsman: CH Morris
+            bowler: SR Watson
+            non_striker: RR Pant
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 11.2:
+            batsman: RR Pant
+            bowler: SR Watson
+            non_striker: CH Morris
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 11.3:
+            batsman: RR Pant
+            bowler: SR Watson
+            non_striker: CH Morris
+            runs:
+              batsman: 6
+              extras: 0
+              total: 6
+        - 11.4:
+            batsman: RR Pant
+            bowler: SR Watson
+            non_striker: CH Morris
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 11.5:
+            batsman: RR Pant
+            bowler: SR Watson
+            non_striker: CH Morris
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 11.6:
+            batsman: CH Morris
+            bowler: SR Watson
+            non_striker: RR Pant
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 12.1:
+            batsman: CH Morris
+            bowler: Iqbal Abdulla
+            non_striker: RR Pant
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 12.2:
+            batsman: RR Pant
+            bowler: Iqbal Abdulla
+            non_striker: CH Morris
+            runs:
+              batsman: 4
+              extras: 0
+              total: 4
+        - 12.3:
+            batsman: RR Pant
+            bowler: Iqbal Abdulla
+            non_striker: CH Morris
+            runs:
+              batsman: 6
+              extras: 0
+              total: 6
+        - 12.4:
+            batsman: RR Pant
+            bowler: Iqbal Abdulla
+            non_striker: CH Morris
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 12.5:
+            batsman: RR Pant
+            bowler: Iqbal Abdulla
+            extras:
+              wides: 1
+            non_striker: CH Morris
+            runs:
+              batsman: 0
+              extras: 1
+              total: 1
+        - 12.6:
+            batsman: RR Pant
+            bowler: Iqbal Abdulla
+            non_striker: CH Morris
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 12.7:
+            batsman: CH Morris
+            bowler: Iqbal Abdulla
+            non_striker: RR Pant
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+            wicket:
+              kind: lbw
+              player_out: CH Morris
+        - 13.1:
+            batsman: RR Pant
+            bowler: SR Watson
+            non_striker: CR Brathwaite
+            runs:
+              batsman: 2
+              extras: 0
+              total: 2
+        - 13.2:
+            batsman: RR Pant
+            bowler: SR Watson
+            non_striker: CR Brathwaite
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 13.3:
+            batsman: CR Brathwaite
+            bowler: SR Watson
+            non_striker: RR Pant
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 13.4:
+            batsman: CR Brathwaite
+            bowler: SR Watson
+            non_striker: RR Pant
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 13.5:
+            batsman: CR Brathwaite
+            bowler: SR Watson
+            non_striker: RR Pant
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 13.6:
+            batsman: RR Pant
+            bowler: SR Watson
+            non_striker: CR Brathwaite
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 14.1:
+            batsman: RR Pant
+            bowler: YS Chahal
+            non_striker: CR Brathwaite
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 14.2:
+            batsman: RR Pant
+            bowler: YS Chahal
+            non_striker: CR Brathwaite
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 14.3:
+            batsman: RR Pant
+            bowler: YS Chahal
+            non_striker: CR Brathwaite
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 14.4:
+            batsman: CR Brathwaite
+            bowler: YS Chahal
+            non_striker: RR Pant
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 14.5:
+            batsman: CR Brathwaite
+            bowler: YS Chahal
+            non_striker: RR Pant
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+            wicket:
+              kind: bowled
+              player_out: CR Brathwaite
+        - 14.6:
+            batsman: PJ Cummins
+            bowler: YS Chahal
+            non_striker: RR Pant
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 15.1:
+            batsman: RR Pant
+            bowler: TS Mills
+            non_striker: PJ Cummins
+            runs:
+              batsman: 4
+              extras: 0
+              total: 4
+        - 15.2:
+            batsman: RR Pant
+            bowler: TS Mills
+            non_striker: PJ Cummins
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 15.3:
+            batsman: PJ Cummins
+            bowler: TS Mills
+            non_striker: RR Pant
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 15.4:
+            batsman: RR Pant
+            bowler: TS Mills
+            non_striker: PJ Cummins
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 15.5:
+            batsman: PJ Cummins
+            bowler: TS Mills
+            non_striker: RR Pant
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 15.6:
+            batsman: PJ Cummins
+            bowler: TS Mills
+            non_striker: RR Pant
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 16.1:
+            batsman: PJ Cummins
+            bowler: SR Watson
+            non_striker: RR Pant
+            runs:
+              batsman: 4
+              extras: 0
+              total: 4
+        - 16.2:
+            batsman: PJ Cummins
+            bowler: SR Watson
+            non_striker: RR Pant
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+            wicket:
+              kind: bowled
+              player_out: PJ Cummins
+        - 16.3:
+            batsman: A Mishra
+            bowler: SR Watson
+            non_striker: RR Pant
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 16.4:
+            batsman: A Mishra
+            bowler: SR Watson
+            non_striker: RR Pant
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 16.5:
+            batsman: A Mishra
+            bowler: SR Watson
+            non_striker: RR Pant
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 16.6:
+            batsman: RR Pant
+            bowler: SR Watson
+            non_striker: A Mishra
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 17.1:
+            batsman: A Mishra
+            bowler: TS Mills
+            non_striker: RR Pant
+            runs:
+              batsman: 2
+              extras: 0
+              total: 2
+        - 17.2:
+            batsman: A Mishra
+            bowler: TS Mills
+            non_striker: RR Pant
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 17.3:
+            batsman: RR Pant
+            bowler: TS Mills
+            non_striker: A Mishra
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 17.4:
+            batsman: A Mishra
+            bowler: TS Mills
+            non_striker: RR Pant
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 17.5:
+            batsman: A Mishra
+            bowler: TS Mills
+            non_striker: RR Pant
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 17.6:
+            batsman: RR Pant
+            bowler: TS Mills
+            non_striker: A Mishra
+            runs:
+              batsman: 6
+              extras: 0
+              total: 6
+        - 18.1:
+            batsman: A Mishra
+            bowler: SR Watson
+            non_striker: RR Pant
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 18.2:
+            batsman: A Mishra
+            bowler: SR Watson
+            non_striker: RR Pant
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 18.3:
+            batsman: RR Pant
+            bowler: SR Watson
+            non_striker: A Mishra
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 18.4:
+            batsman: A Mishra
+            bowler: SR Watson
+            non_striker: RR Pant
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 18.5:
+            batsman: A Mishra
+            bowler: SR Watson
+            non_striker: RR Pant
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 18.6:
+            batsman: A Mishra
+            bowler: SR Watson
+            non_striker: RR Pant
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 19.1:
+            batsman: RR Pant
+            bowler: P Negi
+            non_striker: A Mishra
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+            wicket:
+              kind: bowled
+              player_out: RR Pant
+        - 19.2:
+            batsman: S Nadeem
+            bowler: P Negi
+            non_striker: A Mishra
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 19.3:
+            batsman: S Nadeem
+            bowler: P Negi
+            non_striker: A Mishra
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+            wicket:
+              kind: caught and bowled
+              player_out: S Nadeem
+        - 19.4:
+            batsman: A Mishra
+            bowler: P Negi
+            non_striker: Z Khan
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 19.5:
+            batsman: Z Khan
+            bowler: P Negi
+            non_striker: A Mishra
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 19.6:
+            batsman: A Mishra
+            bowler: P Negi
+            non_striker: Z Khan
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
