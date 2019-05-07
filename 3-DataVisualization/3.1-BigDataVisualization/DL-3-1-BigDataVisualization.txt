@@ -1,0 +1,74 @@
+The Best Way to Visualize a Dataset Easily - https://www.youtube.com/watch?v=yQsOFWqpjkE
+T-SNE - https://cs.stanford.edu/people/karpathy/tsnejs/
+Practice - DataLit_3_1_DV_pml_training.ipynb
+
+
+Plotly Whirlwind Introduction-Extended.ipynb - https://github.com/llSourcell/Data_Visualization/blob/master/Plotly%20Whirlwind%20Introduction-Extended.ipynb
+Plotly + Cufflinks
+
+
+1. Create an account to get a username and api key
+
+Cufflinks is a wrapper around the plotly library specifically for plotting with Pandas dataframes. With cufflinks, we don't have to dig into the details of plotly, instead building our charts with minimal code. Basically, you can make charts directly in plotly for more control, or you can use cufflinks to rapidly prototype plots and explore the data.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+Data Science with Medium Story Stats in Python - https://towardsdatascience.com/analyzing-medium-story-stats-with-python-24c6491a8ff0
+https://github.com/WillKoehrsen/Data-Analysis/blob/master/medium/Medium%20Stats%20Analysis.ipynb
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+Types of Visualization 
+What would you Like to show ?
+1. Relationships
+	Relationship
+		1.Two Variables
+			Scatter plot
+		2.Thre Variables
+			Bubble chart
+
+
+2. Comparision
+Sets 1 variable apart from another
+	1.Among Items
+		A. Two Variables per item - Variable width column chart
+		B. One Variable per item 
+			a. Many Categories - Table of Table with Embedded Charts
+			b. Few Categories
+				i. Many Items - Bar Chart
+				ii.Few Items - Column Chart
+	2.Over Time
+		A. Many Periods
+			a. Cyclical Data - Circulare Are Chart
+			b. Non-Cyclical Data - Line Chart
+		B. Few Periods
+			a. Few Categories - Column Chart
+			b. Many Categories - Line Chart
+
+3. Composition
+Collects different types of data that make up a whole and displays them together
+	1. Changing Over Time
+		A. Few Periods
+			a. Only relative difference matters - Stacked 100% column chart
+			b. Relative and Absolute difference matters - Stacked Column Chart
+		B. Many Periods
+			a. Only relative difference matters - Stacked 100% Area chart
+			b. Relative and Absolute difference matters - Stacked Area Chart
+	2. Static
+		A. Simple Share of Total - PIE Chart
+		B. Accumulation or Subtraction to total - WTERFALL Chart
+		C. Components of Components - Stacked 100% column chart with subcomponents
+
+4. Distribution
+	1. Single Variable
+		A. Few Data Points - Column Histogram
+		B. Many Data Points - Line Histogram
+	2. Two Variable - Scatter Chart
+	3. Three Variables - 3D Area Chart
+ Image Resources
+ - https://www.kdnuggets.com/2018/04/right-chart-your-data.html
+ - http://www.presencecg.com/wp-content/uploads/2018/03/chartchooserincolor-1024x791.jpg
+ - https://www.analyticsvidhya.com/wp-content/uploads/2015/05/Chart_Selection.jpeg
+ - https://www.analyticsvidhya.com/blog/2015/05/data-visualization-resource/
+
+
+ 

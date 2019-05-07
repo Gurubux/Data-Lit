@@ -85,7 +85,7 @@ SUBSET HISTOGRAM
 ---------------------------------------------
 # Extract top five airlines with most flights
 carrier_flights = pd.Series(flights.groupby('name')['name'].count())
-print(carrier_flights)
+#print(carrier_flights)
 carrier_flights = carrier_flights.sort_values(ascending=False)
 #print(carrier_flights)
 top_five = carrier_flights.index[:5]
@@ -113,7 +113,8 @@ plt.title('Histogram of Delays by Airline'); plt.xlabel('Delay (min)'); plt.ylab
 
 ---------------------------------------------
 SOLUTIONS
----------------------------------------------# Make a separate list for each airline
+---------------------------------------------
+# Make a separate list for each airline
 x1 = list(flights[flights['name'] == 'United Air Lines Inc.']['arr_delay'])
 x2 = list(flights[flights['name'] == 'JetBlue Airways']['arr_delay'])
 x3 = list(flights[flights['name'] == 'ExpressJet Airlines Inc.']['arr_delay'])
@@ -125,7 +126,9 @@ colors = ['#E69F00', '#56B4E9', '#F0E442', '#009E73', '#D55E00']
 names = ['United Air Lines Inc.', 'JetBlue Airways', 'ExpressJet Airlines Inc.',
          'Delta Air Lines Inc.', 'American Airlines Inc.']
 
-#Solution 1: Side-by-Side Histograms
+---------------------------------------------
+SOLUTION 1: SIDE-BY-SIDE HISTOGRAMS
+---------------------------------------------
 figsize(10, 8)
 
 # Make the histogram using a list of lists
@@ -139,7 +142,9 @@ plt.xlabel('Delay (min)')
 plt.ylabel('Normalized Flights')
 plt.title('Side-by-Side Histogram with Multiple Airlines');         
 
-#
+---------------------------------------------
+SOLUTION 2: STACKED HISTOGRAMS
+---------------------------------------------
 figsize(10, 8)
 plt.hist([x1, x2, x3, x4, x5], bins = int(180/15), normed=True,
          stacked=True,
@@ -147,3 +152,9 @@ plt.hist([x1, x2, x3, x4, x5], bins = int(180/15), normed=True,
 
 plt.legend(); plt.xlabel('Delay (min)'); plt.ylabel('Normed Flights');
 plt.title('Stacked Histogram with Multiple Airlines');
+
+
+
+
+
+

@@ -1,0 +1,17 @@
+CITINGS 
+1. Berkely Univ. Libbary - http://guides.lib.berkeley.edu/data-visualization/type
+2. Tableau Data visualization beginner's guide - https://www.tableau.com/learn/articles/data-visualization
+3. Ventsislav Yordanov's posting - https://towardsdatascience.com/data-science-with-python-intro-to-data-visualization-and-matplotlib-5f799b7c6d82
+
+THERE ARE 4 STEPS TO DO DATA VISUALIZATION. (Refer Downloaded File in the current folder - By Siraj Raval)
+Step 1 : Think before you start
+Step 2 : Remember basic visualization rules
+Step 3 : Choose type of visualization
+Step 4 : Consider design
+
+FURTHER READING
+the-single-idea-that-will-instantly-improve-your-data-visualizations - 
+	https://medium.com/swlh/the-single-idea-that-will-instantly-improve-your-data-visualizations-66f60067108a
+Chart Dos and Don’ts - 
+	https://www.eea.europa.eu/data-and-maps/daviz/learn-more/chart-dos-and-donts
+	https://guides.library.duke.edu/datavis/topten
