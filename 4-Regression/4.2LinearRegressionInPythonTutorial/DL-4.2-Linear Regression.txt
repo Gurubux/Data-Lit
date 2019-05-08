@@ -1,0 +1,28 @@
+LINEAR REGRESSION
+
+Questions to ask.
+1. Is the price of a car related to engine horse power OR is the target variable related to the chosen independent variable ? 
+2. If yes, how strong is the relationship ?
+3. Is the relationship linear ? 
+4. Can we estimate the target variable from the chosen independent variable ? 
+
+To answer first two, we need to carry out the Pearsons correlation coefficient
+Ranges from -1 to 1
+	-1 = Perfect inverse relation (descending)
+	 0 = No relation whatsoever 
+	 1 = Perfect Linear Relation (ascending)
+
+from scipy.stats.stats import pearsonr
+pearsonr(data['horsepower'], data['price']) # pearsonr(independent_var, dependent_var)
+
+RSS - Residual sum of squares - The residual values squared and summed together.
+TSS - Total sum of squares - Difference between the mean value and the actual values, squared then summed.
+R²  -
+- coefficient of determination
+- A measure of how close the data are to the fitted  regression linear
+- computed by 1- (RSS/TSS)
+- Ratio of variation explained  bhy the model verses the actual variation in the sample data
+- Always between 0 and 1
+- 0 means the model explains none of the variation of the data from its mean
+- 1 means the model explains all the variation
+- Higher the R² better the model fits the data
