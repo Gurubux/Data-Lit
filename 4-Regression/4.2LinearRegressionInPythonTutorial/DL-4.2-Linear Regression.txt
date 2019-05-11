@@ -35,7 +35,7 @@ R²  -
   Thus, if a correlation (R) of 0.8 is observed between two variables (say, height and weight, for example), then a linear regression model attempting to explain either variable in terms of the other variable will account for 64% of the variability in the data.
 
 
-  http://www.stat.yale.edu/Courses/1997-98/101/linreg.htm
+http://www.stat.yale.edu/Courses/1997-98/101/linreg.htm
 --------------------------------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------------------------------
 

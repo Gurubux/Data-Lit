@@ -155,6 +155,7 @@ https://www.khanacademy.org/math/statistics-probability/random-variables-stats-l
 
 Y = {Amt of rain tomorrow}
 Logically we can't measure the exact amount of rain, so we find the probablity of a range, by using Definte integral under the curve with limits with the mentioned range.
+p-value :
 				   ₂.₁
 P(|Y-2| < 0.1) =   ∫ f(x) dx
 				   ¹.⁹
@@ -205,6 +206,25 @@ P(X<73)	=		P(    / z < ______  /  )
 
 
 		=		P(   z < −0.5   )
-		≈       0.6915    (from table)
+p-value		≈       0.6915    (from table)
 
-​	
+​
+
+-----------------------------------------------------------
+CHI-SQUARE(X²) TEST
+-----------------------------------------------------------
+		______________
+	   /   (O - E)²	 /
+X² =  / Σ   ______  /
+	 /	      E	   / 
+	/_____________/		   
+
+https://www.mathsisfun.com/data/chi-square-test.html
+
+CHI-SQUARE to P-VALUE
+https://www.mathsisfun.com/data/chi-square-calculator.html
+
+CALCULATE DEGREES OF FREEDOM
+Multiply (rows − 1) by (columns − 1)
+
+Example: DF = (2 − 1)(2 − 1) = 1×1 = 1
