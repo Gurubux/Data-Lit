@@ -218,7 +218,7 @@ So the standard deviation should be 4g, like this: <img src=`https://www.mathsis
 Or perhaps we could have some combination of better accuracy and slightly larger average size, I will leave that up to you!
 
 
-CORELATION
+CORRELATION
 A correlation is a statistical measure of the relationship between two variables. The measure is best used in variables that demonstrate a linear relationship between each other. The fit of the data can be visually represented in a scatterplot.
 
 The correlation COEFFICIENT is a value that indicates the strength of the relationship. The coefficient can take any values from -1 to 1. The interpretations of the values are:
@@ -227,7 +227,7 @@ The correlation COEFFICIENT is a value that indicates the strength of the relati
 	1 : Perfect positive correlation. The variables tend to move in the same direction (i.e., when one variable increases, the other variable also increases).
 
 If two variables are correlated, it does not imply that one variable causes the changes in another variable. Correlation only assesses relationships between variables, and there may be different factors that lead to the relationships. CAUSATION may be a reason for the correlation, but it is not the only possible explanation.
-CORELATION FORMULAE
+CORRELATION FORMULAE
  	__________________________________________  
    /         	Σ (xᵢ - x̅) (yᵢ - ȳ)			 /
   / r(xy) = ______________________________  / 
