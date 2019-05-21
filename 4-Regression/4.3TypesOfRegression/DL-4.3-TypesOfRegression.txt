@@ -1,19 +1,26 @@
-WordFile - TypesOfRegression.odt
+WordFile - v.odt
 
-Linear Regression
-Logistic Regression
-Ridge Regression
-Polynomial Regression
-Quantile Regression
-Lasso Regression
-ElasticNet Regression
-Principal Component Regression
-Partial Least Square Regression
-Support Vector Regression
-Ordinal Regression
-Poisson Regression
-Negative Binomial Regression
-Quasi-Poisson Regression
-Cox Regression
-Randomforest Regression
-Decision Tree Regression
+1. Linear Regression
+2. Bayesian Linear Regression
+3. Logistic Regression
+4. Ridge Regression
+5. Polynomial Regression
+6. Quantile Regression
+7. Fast Forest Quantile Regression
+8. Lasso Regression
+9. ElasticNet Regression
+10. Principal Component Regression
+11. Partial Least Square Regression
+12. Support Vector Regression
+13. Ordinal Regression
+14. Poisson Regression
+15. Negative Binomial Regression
+16. Quasi-Poisson Regression
+17. Cox Regression
+18. Randomforest Regression
+19. Decision Tree Regression
+20. Boosted Decision Tree Regression
+21. Stepwise Regression
+22. Neural Network Regression	
+23. KNN(K-nearestr Neighbours) Regression
+	
