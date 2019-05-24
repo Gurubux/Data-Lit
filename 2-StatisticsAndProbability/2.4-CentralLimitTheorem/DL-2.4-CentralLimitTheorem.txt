@@ -71,23 +71,20 @@ np.random.seed(10)
 population_ages1 = stats.poisson.rvs(loc=18, mu=35, size=150000)
 population_ages2 = stats.poisson.rvs(loc=18, mu=10, size=100000)
 population_ages = np.concatenate((population_ages1, population_ages2))
-
 # Plot the population Histogram
 pd.DataFrame(population_ages).hist(bins=58,
                                   range=(17.5,75.5),
                                   figsize=(9,9))
-print( stats.skew(population_ages) ) # -0.12008
 
 # Obtaining Sample ages size 500
 np.random.seed(6)
 sample_ages = np.random.choice(a= population_ages,
                                size=500)
-
 # Plot the Sample Histogram
 pd.DataFrame(sample_ages).hist(bins=58,
                                   range=(17.5,75.5),
                                   figsize=(9,9))
-print( stats.skew(sample_ages) ) # -0.05622
+
 
 "Both the sample and population has roughly the same shape as the underlying population."
 
@@ -102,4 +99,19 @@ for x in range(200):         # Generate 200 samples
 pd.DataFrame(point_estimates).plot(kind="density",  # Plot sample mean density
                                    figsize=(9,9),
                                    xlim=(41,45))   
-population_ages.mean() - np.array(point_estimates).mean()
+
+print(print( stats.skew(population_ages) )) # -0.1200
+print(print( stats.skew(sample_ages) )) # -0.05622
+print(print( stats.skew(point_estimates) )) # 0.16159
+
+print(population_ages.mean()) # 43.002372
+print(sample_ages.mean())  # 42.388
+print(np.array(point_estimates).mean())  # 43.08678
+
+# Check difference between means
+print(population_ages.mean() - sample_ages.mean() )  # 0.61437200000000303
+print(population_ages.mean() - np.array(point_estimates).mean()) # -0.08440799999999626
+"the mean of the sampling distribution approaches the true population mean"
+
+
+#The more samples we take, the better our estimate of the population parameter is likely to be.
