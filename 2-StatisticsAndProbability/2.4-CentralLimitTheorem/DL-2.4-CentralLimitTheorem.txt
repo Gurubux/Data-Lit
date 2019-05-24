@@ -59,3 +59,47 @@ Kurtosis --> 0 Kurtosis = Nice and symmetric Normal distribution(Perfect ND)
 		 	 + Kurtosis = Fatter tails, pointy peak
 		  	 - Kurtosis = Smaller tails, smoother peak
 https://raw.githubusercontent.com/Gurubux/Data-Lit/master/2-StatisticsAndProbability/2.4-CentralLimitTheorem/SamplingDistribution_Kurtosis.PNG
+
+import scipy.stats as stats
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import random
+import math
+# Obtaining Population ages from 18 with mean 35 and 18 with mean 10
+np.random.seed(10)
+population_ages1 = stats.poisson.rvs(loc=18, mu=35, size=150000)
+population_ages2 = stats.poisson.rvs(loc=18, mu=10, size=100000)
+population_ages = np.concatenate((population_ages1, population_ages2))
+
+# Plot the population Histogram
+pd.DataFrame(population_ages).hist(bins=58,
+                                  range=(17.5,75.5),
+                                  figsize=(9,9))
+print( stats.skew(population_ages) ) # -0.12008
+
+# Obtaining Sample ages size 500
+np.random.seed(6)
+sample_ages = np.random.choice(a= population_ages,
+                               size=500)
+
+# Plot the Sample Histogram
+pd.DataFrame(sample_ages).hist(bins=58,
+                                  range=(17.5,75.5),
+                                  figsize=(9,9))
+print( stats.skew(sample_ages) ) # -0.05622
+
+"Both the sample and population has roughly the same shape as the underlying population."
+
+"**IMP** So we apply Central Limit theorem if Sample and Poplation do not have Normal distribution"
+np.random.seed(10)
+point_estimates = []         # Make empty list to hold point estimates
+
+for x in range(200):         # Generate 200 samples
+    sample = np.random.choice(a= population_ages, size=500)
+    point_estimates.append( sample.mean() )
+    
+pd.DataFrame(point_estimates).plot(kind="density",  # Plot sample mean density
+                                   figsize=(9,9),
+                                   xlim=(41,45))   
+population_ages.mean() - np.array(point_estimates).mean()
