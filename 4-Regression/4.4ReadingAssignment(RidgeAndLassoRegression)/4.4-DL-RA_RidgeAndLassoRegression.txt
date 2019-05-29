@@ -1,1 +1,2 @@
+4.4-DL-RA_RidgeAndLassoRegression.odt
 Ridge and Lasso regression are based on simple linear regression, but tweak the mean squared error cost function to improve results.
