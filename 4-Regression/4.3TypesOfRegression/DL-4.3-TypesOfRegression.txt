@@ -23,4 +23,3 @@ WordFile - v.odt
 21. Stepwise Regression
 22. Neural Network Regression	
 23. KNN(K-nearestr Neighbours) Regression
-	
