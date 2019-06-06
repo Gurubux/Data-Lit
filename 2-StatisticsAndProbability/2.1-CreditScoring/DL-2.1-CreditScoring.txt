@@ -151,7 +151,7 @@ PCA (PRINCIPAL COMPONENT ANALYSIS)
 https://github.com/llSourcell/LoanDefault-Prediction/blob/master/Loan_Default_Prediction_Final.ipynb
 
 ------------------------------------------------------------------------------------------------------------------------------
-MEAN, MEDIAN, MODE, GEOMETRIC MEAN, HARMONIC MEAN, VARIANCE, STANDARD DEVIATION, COVARIANCE, CORELATION ¹²³⁴⁵⁶⁷⁸⁹⁰ *******
+MEAN, MEDIAN, MODE, GEOMETRIC MEAN, HARMONIC MEAN, VARIANCE, STANDARD DEVIATION, Z-SCORE, COVARIANCE, CORELATION ¹²³⁴⁵⁶⁷⁸⁹⁰ *******
 ------------------------------------------
 MEAN   	μ	: ( Σ xᵢ ) / n
 MEDIAN 		: Middle of a data set.
