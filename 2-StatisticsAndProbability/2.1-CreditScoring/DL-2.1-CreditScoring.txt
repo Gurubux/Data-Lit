@@ -1,3 +1,4 @@
+"https://github.com/Gurubux/Data-Lit/blob/master/2-StatisticsAndProbability/2.1-CreditScoring/Loan_Default_Prediction.ipynb"
 Statistics is collection of procedures and principles for gaining information in order to make decisions when faced with uncertainty.
 Concepts to Learn in statistics:
 	1. Statistical Features
@@ -98,6 +99,8 @@ data_clean.head()
 ------------------------------------------
 CORRELATION COEFFICIENT PLOTTING
 ------------------------------------------
+"https://github.com/Gurubux/ML-Analysis-Steps/blob/master/Correlation_Coefficient/Correlation_Coefficient.txt"
+
 > Below are correlation values between the features finally selected.
 corr = data_clean.corr()
 
@@ -124,34 +127,80 @@ def plot_Correlation_Coefficient_2(corr):
 ------------------------------------------
 CROSS-VALIDATION
 ------------------------------------------
+"https://github.com/Gurubux/Udemy-ML/blob/master/Machine_Learning_A-Z/Part2-Regression/Cross-Validation/Cross_Validation.txt"
 # Cross validation with 100 iterations to get smoother mean test and train score curves, each time with 20% data randomly selected as a validation set.
+from sklearn.model_selection import ShuffleSplit
 cv = ShuffleSplit(n_splits=100, test_size=0.2, random_state=0)
-
-
+OR 
+from sklearn.model_selection import cross_val_score
+cross_val_score(rf_class, data_input, data_output, scoring='accuracy', cv = 10)
+accuracy = cross_val_score(rf_class, data_input, data_output, scoring='accuracy', cv = 10).mean() * 100
+print("Accuracy of SVM is: " , accuracy)
 
 ------------------------------------------
 LEARNING CURVE
 ------------------------------------------
 https://www.dataquest.io/blog/learning-curves-machine-learning/
+https://github.com/Gurubux/StatQuest/blob/master/LearningCurve/LearningCurve.txt
 
+plt = plot_learning_curve(estimator, title, X, y, ylim=(0.75, 0.90), cv=cv, n_jobs=4)
 
+plot_learning_curve_2(model, electricity, features, target, train_sizes, 5)
 
 ------------------------------------------
 ROC CURVE PLOT FUNCTION
 ------------------------------------------
+"https://github.com/Gurubux/Udemy-ML/tree/master/Machine_Learning_A-Z/Part2-Regression/ROC_AUC"
+def plotAUC(truth, pred, lab):
+    fpr, tpr, _ = metrics.roc_curve(truth,pred)
+    roc_auc = metrics.auc(fpr, tpr)
+    lw = 2
+    c = (np.random.rand(), np.random.rand(), np.random.rand())
+    plt.plot(fpr, tpr, color= c,lw=lw, label= lab +'(AUC = %0.2f)' % roc_auc)
+    plt.plot([0, 1], [0, 1], color='navy', lw=lw, linestyle='--')
+    plt.xlim([0.0, 1.0])
+    plt.ylim([0.0, 1.0])
+    plt.xlabel('False Positive Rate')
+    plt.ylabel('True Positive Rate')
+    plt.title('ROC curve') #Receiver Operating Characteristic 
+    plt.legend(loc="lower right")
+
+
 ------------------------------------------
 CONFUSION MATRIX VIZ FUNCTION
 ------------------------------------------
-------------------------------------------
+from sklearn.metrics import confusion_matrix
+plot_confusion_matrix2(rfPredict, normalize=True)
+
+
+------------------------------------------------------------
 FEATURE SELECTION USING RFE (RECURSIVE FEATURE ELIMINATION)
-------------------------------------------
+------------------------------------------------------------
+from sklearn.feature_selection import RFE
+# create the RFE model and select 3 attributes
+clf_LR = linear_model.LogisticRegression(C=1e30)
+clf_LR.fit(X_train,y_train)
+rfe = RFE(clf_LR, 10)
+rfe = rfe.fit(data_clean.iloc[:,:-1].values, data_clean.iloc[:,-1].values)
+# summarize the selection of the attributes
+print(rfe.support_)
+print(rfe.ranking_)
+# ['funded_amnt','emp_length','annual_inc','home_ownership','grade',"last_pymnt_amnt", "mort_acc", "pub_rec", 
+# "int_rate", "open_acc","num_actv_rev_tl","mo_sin_rcnt_rev_tl_op","mo_sin_old_rev_tl_op","bc_util","bc_open_to_buy",
+#"avg_cur_bal","acc_open_past_24mths",'loan_status']
 ------------------------------------------
 PCA (PRINCIPAL COMPONENT ANALYSIS)
 ------------------------------------------
-https://github.com/llSourcell/LoanDefault-Prediction/blob/master/Loan_Default_Prediction_Final.ipynb
-
+#https://github.com/llSourcell/LoanDefault-Prediction/blob/master/Loan_Default_Prediction_Final.ipynb
+#PCA (Principal Component Analysis)
+from sklearn.decomposition import PCA 
+pca = PCA(n_components=10, whiten=True)
+X_train_pca = pca.fit_transform(X_train)
+X_test_pca = pca.transform(X_test)
+explained_variance = pca.explained_variance_ratio_
+print('Expected Variance is '+ str(explained_variance))
 ------------------------------------------------------------------------------------------------------------------------------
-MEAN, MEDIAN, MODE, GEOMETRIC MEAN, HARMONIC MEAN, VARIANCE, STANDARD DEVIATION, Z-SCORE, COVARIANCE, CORELATION ¹²³⁴⁵⁶⁷⁸⁹⁰ *******
+MEAN, MEDIAN, MODE, GEOMETRIC MEAN, HARMONIC MEAN, VARIANCE, STANDARD DEVIATION, Z-SCORE, COVARIANCE, CORRELATION ¹²³⁴⁵⁶⁷⁸⁹⁰ *******
 ------------------------------------------
 MEAN   	μ	: ( Σ xᵢ ) / n
 MEDIAN 		: Middle of a data set.
@@ -263,10 +312,11 @@ The correlation COEFFICIENT is a value that indicates the strength of the relati
 
 If two variables are correlated, it does not imply that one variable causes the changes in another variable. Correlation only assesses relationships between variables, and there may be different factors that lead to the relationships. CAUSATION may be a reason for the correlation, but it is not the only possible explanation.
 CORRELATION FORMULAE
- 	__________________________________________  
-   /         	Σ (xᵢ - x̅) (yᵢ - ȳ)			 /
-  / r(xy) = ______________________________  / 
- /	         √(Σ (xᵢ - x̅)² Σ(yᵢ - ȳ)²)     / 
+  	 __________________________________________  
+    /         	Σ (xᵢ - x̅) (yᵢ - ȳ)			  /
+   / r(xy) = ______________________________  / 
+  /	          _________________________     /
+ / 			 √(Σ (xᵢ - x̅)² Σ(yᵢ - ȳ)²)     / 
 /_________________________________________/
 	rxy – the correlation coefficient of the linear relationship between the variables x and y
 	xᵢ – the values of the x-variable in a sample
