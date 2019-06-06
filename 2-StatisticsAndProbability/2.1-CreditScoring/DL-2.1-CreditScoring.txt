@@ -173,6 +173,9 @@ from sklearn.metrics import confusion_matrix
 plot_confusion_matrix2(rfPredict, normalize=True)
 
 
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+\LEFT TO STUDY - START
 ------------------------------------------------------------
 FEATURE SELECTION USING RFE (RECURSIVE FEATURE ELIMINATION)
 ------------------------------------------------------------
@@ -199,6 +202,180 @@ X_train_pca = pca.fit_transform(X_train)
 X_test_pca = pca.transform(X_test)
 explained_variance = pca.explained_variance_ratio_
 print('Expected Variance is '+ str(explained_variance))
+
+--------------------------------------------------------------------------
+CLASSIFICATION REPORT - Precision,recall,F1score for all models
+--------------------------------------------------------------------------
+from sklearn.metrics import classification_report
+print("RF",classification_report(y_test, rfPredict, target_names=None))
+print("SVM",classification_report(y_test, predictions_svm, target_names=None))
+print("LR",classification_report(y_test, LR_Predict_bin, target_names=None))
+print("KNN",classification_report(y_test, knn_pred, target_names=None))
+print("MLP",classification_report(y_test, predict_NN, target_names=None))
+
+RF              precision    recall  f1-score   support
+
+          0       0.84      0.79      0.82      1109
+          1       0.80      0.85      0.82      1091
+
+avg / total       0.82      0.82      0.82      2200
+
+SVM              precision    recall  f1-score   support
+
+          0       0.92      0.71      0.81      1109
+          1       0.76      0.94      0.84      1091
+
+avg / total       0.84      0.83      0.82      2200
+
+LR              precision    recall  f1-score   support
+
+          0       0.93      0.71      0.81      1109
+          1       0.76      0.94      0.84      1091
+
+avg / total       0.85      0.83      0.83      2200
+
+KNN              precision    recall  f1-score   support
+
+          0       0.83      0.70      0.76      1109
+          1       0.74      0.85      0.79      1091
+
+avg / total       0.78      0.77      0.77      2200
+
+MLP              precision    recall  f1-score   support
+
+          0       0.91      0.74      0.82      1109
+          1       0.78      0.93      0.85      1091
+
+avg / total       0.85      0.83      0.83      2200
+
+
+
+
+------------------------------------------
+MOD BOOTSTRAPPING
+------------------------------------------
+Behaviour of models with different sample sizes of dataset
+def modBootstrapper(train, test, nruns, sampsize, model, c):
+    target = 'loan_status'
+    aucs_boot = []
+    for i in range(nruns):
+        train_samp = train.iloc[np.random.randint(0, len(train), size = sampsize)] #selecting random indexes for KFold
+        if (model == "LR"):
+            lr_i = linear_model.LogisticRegression(C = 1e30)
+            lr_i.fit(train_samp.drop(target,1), train_samp[target]) #Logistic regression
+            p = lr_i.predict_proba(test.drop(target,1))[:,1]
+        elif (model == "SVM"):
+            svm_i = svm.SVC(kernel='rbf', C = c) 
+            svm_i.fit(train_samp.drop(target,1), train_samp[target])#SVM fitting and predicting if lr==0
+            p = svm_i.decision_function(test.drop(target,1))
+        elif (model == "RF"):
+            RF_i = RandomForestClassifier(bootstrap=True,criterion = "gini")
+            RF_i.fit(train_samp.drop(target,1), train_samp[target])
+            p = RF_i.predict_proba(X_test)[:,1]
+        elif (model == "KNN"):
+            knn_i = KNeighborsClassifier(n_neighbors= 30) #taking the the best from the above cell and using it to find predictions
+            knn_i.fit(train_samp.drop(target,1), train_samp[target])
+            p = knn_i.predict_proba(X_test)[:,1]
+            
+        aucs_boot.append(metrics.roc_auc_score(test[target], p)) #calculating auc scores for each bag in bootstrapping
+    
+    return [np.mean(aucs_boot), np.sqrt(np.var(aucs_boot))] #mean, standard error = square root of variance
+
+
+
+bs_train, bs_test = train_test_split(data_clean, test_size = 0.2, random_state=42) #just for bootstrapping
+SampleSizes = [250,1000,1500,2000,2750,3750,4500,5200,6500,7000,8000,8500,9000,10000,11000] #various samples of Dataset
+LR_means = []
+Lr_stderr = []
+svm_means = []
+svm_stderr = []
+RF_means = []
+RF_stderr = []
+KNN_means = []
+KNN_stderr = []
+for n in SampleSizes:
+    mean, err = modBootstrapper(bs_train, bs_test, 20, n, "LR", 0.1)# collecting means and stderrs for LR model
+    LR_means.append(mean)
+    Lr_stderr.append(err)
+    mean2, err2 = modBootstrapper(bs_train, bs_test, 20, n,"SVM", 0.1)# collecting means and stderrs for SVM model
+    svm_means.append(mean2)
+    svm_stderr.append(err2)
+    mean3, err3 = modBootstrapper(bs_train, bs_test, 20, n,"RF", 0.1)# collecting means and stderrs for SVM model
+    RF_means.append(mean3)
+    RF_stderr.append(err3)
+    mean4, err4 = modBootstrapper(bs_train, bs_test, 20, n,"KNN", 0.1)# collecting means and stderrs for SVM model
+    KNN_means.append(mean4)
+    KNN_stderr.append(err4)
+    print(n)
+>>>
+250
+1000
+1500
+2000
+2750
+3750
+4500
+5200
+6500
+7000
+8000
+8500
+9000
+10000
+11000
+------------------------------------------
+LOGARITHMIC CURVE PLOTTING
+------------------------------------------
+plt.plot(np.log2(SampleSizes), LR_means, 'r', label = 'LR means')
+plt.plot(np.log2(SampleSizes), LR_means + np.array(Lr_stderr), 'r+-', label = 'LR means + stderr')
+plt.plot(np.log2(SampleSizes), LR_means - np.array(Lr_stderr), 'r--',  label = 'LR means + stderr')
+
+plt.plot(np.log2(SampleSizes), svm_means, 'g', label = 'SVM means')
+plt.plot(np.log2(SampleSizes), svm_means + np.array(svm_stderr), 'g+-', label = 'SVM means + stderr')
+plt.plot(np.log2(SampleSizes), svm_means - np.array(svm_stderr), 'g--', label = 'SVM means - stderr')
+
+plt.plot(np.log2(SampleSizes), RF_means, 'b', label = 'RF means')
+plt.plot(np.log2(SampleSizes), RF_means + np.array(RF_stderr), 'b+-', label = 'RF means + stderr')
+plt.plot(np.log2(SampleSizes), RF_means - np.array(RF_stderr), 'b--', label = 'RF means - stderr')
+
+plt.plot(np.log2(SampleSizes), KNN_means, 'm', label = 'KNN means')
+plt.plot(np.log2(SampleSizes), KNN_means + np.array(KNN_stderr), 'm+-', label = 'KNN means + stderr')
+plt.plot(np.log2(SampleSizes), KNN_means - np.array(KNN_stderr), 'm--', label = 'KNN means - stderr')
+
+plt.legend(bbox_to_anchor=(1.20, 0.5),loc = 10)
+plt.xlabel('Log2(Sample Sizes)')
+plt.ylabel('roc_auc_score')
+
+
+------------------------------------------
+BAGGING, MODEL EVALUATION, KFOLD, ENSEMBLE
+------------------------------------------
+from sklearn.ensemble import BaggingClassifier
+from sklearn.ensemble import AdaBoostClassifier
+model_rf = BaggingClassifier(base_estimator=randomForest, n_estimators=100, random_state=7)
+
+model_lr = BaggingClassifier(base_estimator=clf_LR, random_state=7)
+
+Ada_clf = AdaBoostClassifier(n_estimators=50)
+
+results = model_selection.cross_val_score(model_rf, data_clean.iloc[:,:-1].values, data_clean.iloc[:,-1].values, cv=kfold)
+print(results.mean()) #0.8298181818181819
+
+results = model_selection.cross_val_score(model_lr, data_clean.iloc[:,:-1].values, data_clean.iloc[:,-1].values, cv=kfold)
+print(results.mean()) #0.8193636363636363
+
+scores = cross_val_score(Ada_clf, data_clean.iloc[:,:-1].values, data_clean.iloc[:,-1].values)
+print(results.mean()) #0.8212723023101454
+
+
+
+\LEFT TO STUDY - END
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+
+
+"ADDITIONAL NOTES"
 ------------------------------------------------------------------------------------------------------------------------------
 MEAN, MEDIAN, MODE, GEOMETRIC MEAN, HARMONIC MEAN, VARIANCE, STANDARD DEVIATION, Z-SCORE, COVARIANCE, CORRELATION ¹²³⁴⁵⁶⁷⁸⁹⁰ *******
 ------------------------------------------
