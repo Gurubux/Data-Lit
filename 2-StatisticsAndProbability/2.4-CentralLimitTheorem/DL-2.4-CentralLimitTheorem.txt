@@ -6,7 +6,7 @@ CLT says,
 	It a very good approximation for the sum or the means of a lot of processes.
 
 
-As you increase your sample size, as you increase your n, and as you take a lot of sample means(or sum), you're going to have a frequency plot(Of the mean/sum) that looks very, very close to a normal distribution.
+As you increase your sample size, as you increase your n, and as you take a lot of sample means(or sum), you`re going to have a frequency plot(Of the mean/sum) that looks very, very close to a normal distribution.
 Example:
 	For n=10
 	Take a sample say 
@@ -23,7 +23,7 @@ Example:
 
 		As Sample counts approach to infinity we approach to closer normal deviation
 
-Because in life, there's all sorts of processes out there, proteins bump crazy things, humans interacting in weird ways. And you don't know the probability distribution functions for any of those things. But what the central limit theorem tells us is if we add a bunch of those actions together, assuming that they all have the same distribution, or if we were to take the mean of all of those actions together, and if we were to plot the frequency of those means, we do get a normal distribution.
+Because in life, there`s all sorts of processes out there, proteins bump crazy things, humans interacting in weird ways. And you don`t know the probability distribution functions for any of those things. But what the central limit theorem tells us is if we add a bunch of those actions together, assuming that they all have the same distribution, or if we were to take the mean of all of those actions together, and if we were to plot the frequency of those means, we do get a normal distribution.
 
 If you decide to take high sample size (s) per observation, your normal distribution narrows.
 

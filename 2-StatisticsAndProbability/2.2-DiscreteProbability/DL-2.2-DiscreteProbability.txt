@@ -1,3 +1,4 @@
+"https://appliedmachinelearning.blog/2018/08/31/lets-talk-about-numeric-distributions-python/"
 ------------------------------------
 EXPECTED VALUE - MEAN(Μ)
 ------------------------------------
@@ -51,3 +52,9 @@ k=75 (We are looking for 75 followers, so 75 is our number of successes.)
 	= 0.028
 	
 The likelihood of getting 75 new followers in a week is 2.8%.
+
+
+-----------------------------------------------------------------------------------------
+population_ages1 = stats.poisson.rvs(loc=18, mu=35, size=150000)
+population_ages2 = stats.poisson.rvs(loc=18, mu=10, size=100000)
+#DL-2.4-CentralLimitTheorem.txt
