@@ -1,3 +1,4 @@
+"https://github.com/Gurubux/Data-Lit/blob/master/2-StatisticsAndProbability/2.5-Homework_Airlines/airlines_least_delay_new.ipynb"
 ---------------------------------------
 MERGE COLUMNS OF DIFFERENT FILES
 ---------------------------------------
@@ -158,3 +159,16 @@ plt.title('Stacked Histogram with Multiple Airlines');
 
 
 
+
+
+---------------------------------------------
+DENSITY PLOT , DENSITY CURVE, NORMAL CURVE - kde=True
+---------------------------------------------
+figsize(9, 7)
+
+sns.distplot(flights['arr_delay'], hist=False, kde=True, 
+             bins=int(180/5), color = 'darkblue', 
+             kde_kws={'linewidth': 4});
+
+plt.title('Density Plot and Histogram of Arrival Delays'); 
+plt.xlabel('Delay (min)'); plt.ylabel('Density');

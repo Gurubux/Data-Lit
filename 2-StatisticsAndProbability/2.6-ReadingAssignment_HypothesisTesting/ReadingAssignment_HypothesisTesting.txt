@@ -77,3 +77,16 @@ A t-test is very similar to a z-test, but it is used when comparing means, rathe
 One Sample vs Two Sample Test
 
 When we are comparing to an assumption, or a predefined standard, we use a one sample test. On the other hand, when we have two populations from which to draw samples, as is the case for an A/B test, we do a two sample test.
+
+
+
+--------------------------------------------------------------------------------------------------
+Draw Confidence level for Normal Curve, Z-Score CDF PDF PPF
+draw_z_score(x, x<z0, 0, 1, 'z<-0.75')
+sample_means = normal_curve_confidence_shade(population_ages,minnesota_ages,100)
+#https://github.com/Gurubux/ML-Analysis-Steps/blob/master/InferentialStatistics/HypothesisTestingAndTheT-Test/HypothesisTestingAndTheT-Test.txt
+--------------------------------------------------------------------------------------------------
+"https://github.com/Gurubux/Data-Lit/blob/master/2-StatisticsAndProbability/2.6-ReadingAssignment_HypothesisTesting/Hypothesis_Testing_Demo_DataLit_Week_2.ipynb"
+
+https://github.com/Gurubux/ML-Analysis-Steps/blob/master/InferentialStatistics/HypothesisTestingAndTheT-Test/HypothesisTestingAndTheT-Test.txt
+https://github.com/Gurubux/ML-Analysis-Steps/blob/master/InferentialStatistics/HypothesisTestingAndTheT-Test/HypothesisTestingAndTheT_Test_ConfidenceInterval.ipynb
