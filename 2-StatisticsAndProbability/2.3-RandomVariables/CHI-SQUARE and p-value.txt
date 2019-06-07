@@ -8,6 +8,8 @@ X² =
  /        E    /
 /_____________/		   
 
+O -> Observed
+E -> Expected
 https://www.mathsisfun.com/data/chi-square-test.html
 
 CHI-SQUARE to PI-VALUE
