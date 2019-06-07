@@ -2,8 +2,9 @@ The Best Way to Visualize a Dataset Easily - https://www.youtube.com/watch?v=yQs
 T-SNE - https://cs.stanford.edu/people/karpathy/tsnejs/
 Practice - DataLit_3_1_DV_pml_training.ipynb
 
-
+------------------------------------------------------------------------------------------------------------------------------------
 Plotly Whirlwind Introduction-Extended.ipynb - https://github.com/llSourcell/Data_Visualization/blob/master/Plotly%20Whirlwind%20Introduction-Extended.ipynb
+https://nbviewer.jupyter.org/github/llSourcell/Data_Visualization/blob/master/Plotly%20Whirlwind%20Introduction-Extended.ipynb
 Plotly + Cufflinks
 
 
@@ -11,11 +12,15 @@ Plotly + Cufflinks
 
 Cufflinks is a wrapper around the plotly library specifically for plotting with Pandas dataframes. With cufflinks, we don't have to dig into the details of plotly, instead building our charts with minimal code. Basically, you can make charts directly in plotly for more control, or you can use cufflinks to rapidly prototype plots and explore the data.
 
-
---------------------------------------------------------------------------------------------------------------------------------------------
-Data Science with Medium Story Stats in Python - https://towardsdatascience.com/analyzing-medium-story-stats-with-python-24c6491a8ff0
-https://github.com/WillKoehrsen/Data-Analysis/blob/master/medium/Medium%20Stats%20Analysis.ipynb
---------------------------------------------------------------------------------------------------------------------------------------------
+"OPEN IN JUPYTER"
+or
+"https://nbviewer.jupyter.org/github/llSourcell/Data_Visualization/blob/master/Plotly%20Whirlwind%20Introduction-Extended.ipynb"
+------------------------------------------------------------------------------------------------------------------------------------
+Data Science with Medium Story Stats in Python 
+https://towardsdatascience.com/analyzing-medium-story-stats-with-python-24c6491a8ff0
+https://github.com/WillKoehrsen/Data-Analysis/tree/master/medium
+https://nbviewer.jupyter.org/github/WillKoehrsen/Data-Analysis/blob/master/medium/Medium%20Stats%20Analysis.ipynb
+------------------------------------------------------------------------------------------------------------------------------------
 
 Types of Visualization 
 What would you Like to show ?
