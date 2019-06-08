@@ -1,2 +1,4 @@
-4.4-DL-RA_RidgeAndLassoRegression.odt
+4.4-https://github.com/Gurubux/Data-Lit/blob/master/4-Regression/4.4ReadingAssignment(RidgeAndLassoRegression)/4.4-DL-RA_RidgeAndLassoRegression.odt
+
+
 Ridge and Lasso regression are based on simple linear regression, but tweak the mean squared error cost function to improve results.

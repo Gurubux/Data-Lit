@@ -1,5 +1,11 @@
-WordFile - v.odt
+WordFile - "https://github.com/Gurubux/Data-Lit/blob/master/4-Regression/4.3TypesOfRegression/TypesOfRegression.odt"
 
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+"https://www.r-bloggers.com/15-types-of-regression-you-should-know/"
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+Types Of Regression
 1. Linear Regression
 2. Bayesian Linear Regression
 3. Logistic Regression
