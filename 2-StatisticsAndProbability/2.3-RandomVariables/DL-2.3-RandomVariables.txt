@@ -228,3 +228,30 @@ CALCULATE DEGREES OF FREEDOM
 Multiply (rows − 1) by (columns − 1)
 
 Example: DF = (2 − 1)(2 − 1) = 1×1 = 1
+
+-----------------------------------------------------------
+Spearman Rank-Order Correlation
+-----------------------------------------------------------
+		__________________
+	   /      6Σᵢdᵢ²	 /
+ρ =   / 1 - ----------- /
+	 /	     n(n²–1)   / 
+	/_________________/		   
+	Where,
+		n is the number of data points of the two variables 
+		dᵢ is the difference in the ranks of the iᵗʰ element of each random variable considered. dₓ - dᵧ
+		______________________________________________________________________
+	   /      6[Σᵢdᵢ² + (1/12)[(m₁³−m₁) + (m₂³−m₂) + (m₃³−m₃) +...(mₖ³−mₖ)]	 /
+ρ =   / 1 - --------------------------------------------------------------- /
+	 /	     						  n(n²–1)   						   / 
+	/_____________________________________________________________________/		
+	where,
+		k is the number of values that are repeated
+		mₖ is the number of times the kᵗʰ term is repeated
+
+ρ = +1 to -1
+A ρ of +1 indicates a perfect association of ranks
+A ρ of zero indicates no association between ranks and
+ρ of -1 indicates a perfect negative association of ranks.
+The closer ρ is to zero, the weaker the association between the ranks.
+"https://www.toppr.com/guides/business-mathematics-and-statistics/correlation-and-regression/rank-correlation/"
